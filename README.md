@@ -1,4 +1,4 @@
-# Online-Shop-JavaScript-Busket
+# Online-Shop-JavaScript-Basket
 
 ## Aufgabenstellung
 Dein Online-Shop soll um eine JavaScript-Funktionalität erweitert werden.
