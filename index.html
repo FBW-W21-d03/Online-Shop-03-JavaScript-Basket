@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Metatron" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2? Familie= Atomic+Alter & family= Aubrey & family=Orbitron&display=swap"
+        rel="stylesheet">
+     <script src="https://kit.fontawesome.com/6f4f2b97ce.js" crossorigin="anonymous"></script>
+    <title>Electro-Shop</title>
+</head>
+
+<body>
+    <header>
+  <!--Überschrift mit Icon-->
+      <h1><i class="fas fa-plug"></i>Electro-Shop-Sprotte<i class="fas fa-plug"></i></h1><br><br>
+  <!--Navigationsleiste-->
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index1.html">Einkaufswagen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index3.html">Kontakt</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+    </header>
+
+    <main>
+  
+      <karten>
+        <div class="karten">
+         <div class="row row-cols-1 row-cols-md-3 g-4"> <!--Karten in einer Reihe-->
+        <!--Erste Karte-->
+            <div class="card" style="width: 18rem;">       
+            <img src="./product01.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Laptop</h5>
+              <p class="card-text">HP 250 G8 45R43ES 15,6" FHD, Intel i3-1115G4, 8GB RAM, 256GB SSD, Windows 10 </p>
+              <a href="#" id="knopf" class="btn btn-primary">320,00-Euro</a>
+              <button id="umrechnen" onclick="umrechnen()">umrechnen</button>
+          </div>
+          </div>
+          <!--Zweite Karte-->
+          <div class="card" style="width: 18rem;">       
+            <img src="./product02.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">3-D Kopfhörer</h5>
+              <p class="card-text">Sennheiser HDR 120-II Funk On Ear Kopfhörer On Ear Schwarz <br><br></p>
+              <a href="#" id="knopf1" class="btn btn-primary">49,95-Euro</a>
+              <button id="umrechnen1" onclick="umrechnen1()">umrechnen</button>
+            </div>
+          </div>
+          <!--Drite Karte-->
+          <div class="card" style="width: 18rem;">       
+            <img src="./product03.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gaming-Laptop Samsung</h5>
+              <p class="card-text">Samsung Galaxy Book Mystic Silver - 15.6" (39,62cm) FHD, Intel i3-1115G4, 8GB RAM... </p>
+              <a href="#" id="knopf2" class="btn btn-primary">860,00-Euro</a>
+              <button id="umrechnen2" onclick="umrechnen2()">umrechnen</button>
+              
+            </div>
+          </div>
+          <!--Vierte Karte-->
+            <div class="card" style="width: 18rem;">       
+            <img src="./product04.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tablet-G3sr</h5>
+              <p class="card-text">HP Chromebook x360 14a-ca0005ng 14" FHD IPS Touch, Intel N4020, 4GB RAM, 64GB</p>
+              <a href="#" id="knopf3" class="btn btn-primary">548,00-Euro</a>
+              <button id="umrechnen3" onclick="umrechnen3()">umrechnen</button>
+          </div>
+          </div> 
+          <!--Fünfte Karte-->
+          <div class="card" style="width: 18rem;">       
+            <img src="./product05.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Thomson-Kopfhörer</h5>
+              <p class="card-text">Thomson WHP3001BK Funk TV Over Ear Kopfhörer Over Ear Lautstärkeregelung Schwarz </p>
+              <a href="#" id="knopf4" class="btn btn-primary">98,00-Euro</a>
+              <button id="umrechnen4" onclick="umrechnen4()">umrechnen</button>
+          </div>
+          </div> 
+          <!--Sechte Karte-->
+          <div class="card" style="width: 18rem;">       
+            <img src="./product06.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Laptop-Acer</h5>
+              <p class="card-text">Acer Chromebook 315, 15,6" Full HD IPS Touch, Intel Celeron N4120,4GB.</p><br>
+              <a href="#" id="knopf5" class="btn btn-primary">428,00-Euro</a>
+              <button id="umrechnen5" onclick="umrechnen5()">umrechnen</button>
+            </div>
+          </div>
+          <!--Siebte Karte-->
+          <div class="card" style="width: 18rem;">       
+            <img src="./product07.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Realme-Handy</h5>
+              <p class="card-text">Realme 8 128GB Cyber Black [16,3cm (6,4") Super AMOLED Display, Android 11, 64MP Quad-Kamera]</p>
+              <a href="#" id="knopf6" class="btn btn-primary">179,00-Euro</a>
+              <button id="umrechnen6" onclick="umrechnen6()">umrechnen</button>
+            </div>
+          </div>
+          <!--Achte Karte-->
+          <div class="card" style="width: 18rem;">       
+            <img src="./product08.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lenovo</h5>
+              <p class="card-text">Lenovo IdeaPad 1 81VU00A4GE - 14" FHD IPS, Intel Celeron N4020, 4GB RAM, 128GB SSD...<br><br> </p>
+              <a href="#" id="knopf7" class="btn btn-primary">299,00-Euro</a>
+              <button id="umrechnen7" onclick="umrechnen7()">umrechnen</button>
+            </div>
+          </div>
+          <!--Neunte Karte-->
+          <div class="card" style="width: 18rem;">       
+            <img src="./product09.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Digitale Kamera G6</h5>
+              <p class="card-text">Arlo Kameragehäuse Weiß für Arlo Ultra/Pro 3 (VMA5202H).<br><br><br></p>
+              <a href="#" id="knopf8" class="btn btn-primary">57,00-Euro</a>
+              <button id="umrechnen8" onclick="umrechnen8()">umrechnen</button>
+            </div>
+          </div>
+          <!--Zehnte Karte-->
+          <div class="card" style="width: 18rem;">       
+            <img src="./product07.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Samsung-Handy</h5>
+              <p class="card-text">Samsung Galaxy S20 FE 5G 128GB Cloud Navy EU [16,40cm (6,5") OLED Display, Android 10, 12MP</p>
+              <a href="#" id="knopf9" class="btn btn-primary">589,00-Euro</a>
+              <button id="umrechnen9" onclick="umrechnen9()">umrechnen</button>
+            </div>
+          </div>
+          <!--Elfte Karte-->
+          <div class="card" style="width: 18rem;">       
+            <img src="./product08.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">HP-Laptop</h5>
+              <p class="card-text">HP 255 G7 214L9ES 15,6" FHD, AMD Athlon 3050U Dual-Core, 8GB RAM, 256GB SSD, DVD.<br><br></p>
+              <a href="#" id="knopf10" class="btn btn-primary">299,00-Euro</a>
+              <button id="umrechnen10" onclick="umrechnen10()">umrechnen</button>
+            </div>
+          </div>
+          <!--Zwölfte Karte-->
+          <div class="card" style="width: 18rem;">       
+            <img src="./product04.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">HP-NVY</h5>
+              <p class="card-text">HP ENVY x360 15-eu0178ng 15,6" FHD IPS Touch, Ryzen 7 5700U, 16GB RAM, 1TB SSD, Windows 10.</p>
+              <a href="#" id="knopf11" class="btn btn-primary">989,00-Euro</a>
+              <button id="umrechnen11" onclick="umrechnen11()">umrechnen</button>
+            </div>
+          </div>
+         </div>
+          
+      </karten>
+    </main>
+    
+
+ <script src="index.js"></script> <!--Verlinkung nach Javascript-->
+</body>
+
+</html>
