@@ -1,0 +1,33 @@
+*{
+    margin: 0,auto;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 30vh;
+    background-color: rgba(8, 8, 8, 0.746);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-header{
+        background-image:url(./logo.png) ;
+        background-size: contain;
+        width: 25vw;
+        height:25vh;
+
+} 
+.card-text {
+                color: rgb(200, 45, 79);
+}
+
+.img-footer{
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+    background-image: url(./logo.png);
+    margin: 20px;
+    padding-top: 5px;
+    
+}
