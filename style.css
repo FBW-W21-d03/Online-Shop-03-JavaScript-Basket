@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+.waren {
+  font-size: 25px;
+  background-color: bisque;
+  padding-bottom: 45px;
+  padding-left: 150px;
+}
+
+main {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.allCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

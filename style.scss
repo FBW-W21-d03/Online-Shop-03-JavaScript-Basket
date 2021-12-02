@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+}
+.waren{
+    font-size: 25px;
+    background-color: bisque;
+    padding-bottom: 45px;
+ padding-left: 150px;
+}
+main{
+  
+
+   
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.allCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
