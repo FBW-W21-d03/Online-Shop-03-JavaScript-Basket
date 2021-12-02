@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- Bootstrap CSS --->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--- Style CSS --->
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <title>Online-Shop</title>
+</head>
+<body>
+    
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light  sticky-top">
+            <div class="container-fluid px-5 mx-5">
+              <a class="navbar-brand bg-dark" href="#">
+                <img class="logo" src="logo.png" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Laptops</a></li>
+                      <li><a class="dropdown-item" href="#">Mobiles</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Headphones</a></li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+                <button id="währung"  class="btn btn-outline-dark m-3 " onclick="myFunction()">$USD</button>
+               
+                <form class="d-flex">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <i class="bi-cart-fill  me-1"></i>
+                        Cart
+                        <span id="total" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+                <form class="d-flex m-4 p-4">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+   
+    <main>
+        <h1 class="display-1 m-auto p-3 m-auto text-center">Electro Shop</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-5 container shadow-lg  px-lg-5 bg-body m-auto p-5 justify-content-center align-items-center">
+            <div class="col ">
+              <div class="card">
+                <img src="product01.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Mac notebook</h5>
+                  <p class="card-text">
+                    Von Apple designter M1 Chip für einen gigantischen Leistungssprung bei CPU und GPU und maschinellem Lernen
+                    Mach mehr als je zuvor mit bis zu 18 Std. Batterielaufzeit
+                    
+                   
+                </p>
+               
+                  <p><b id="dollar">1399.00</b><span id="wert">€</span></p>
+                
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center">
+                      <button onclick="mac_kaufen()" 
+                        class="btn btn-outline-dark  mt-auto shadow-lg p-3 rounded">
+                        Add to cart
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="product02.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sony MDR-7506 Studio-Kopfhörer </h5>
+                  <p class="card-text">
+                    Sony WH-XB910N kabellose Noise Cancelling-Kopfhörer mit EXTRA BASS (bis zu 30 Stunden Akkulaufzeit, Over-Ear-Design, optimiert für Alexa und Google Assistant, Freisprecheinrichtung), Schwarz
+                    </p>
+                    <p><b id="dollar1">399.00</b><span id="wert1">€</span></p>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center">
+                      <button onclick="headphone_kaufen()" 
+                        class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded" >
+                        Add to cart
+
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="product03.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Mac notebook pro</h5>
+                  <p class="card-text">
+                    2021 Apple MacBook Pro (16", Apple M1 Max Chip mit 10‑Core CPU und 32‑Core GPU, 32 GB RAM, 1 TB SSD) - Space Grau
+                    4,5 von 5 Sternen
+                
+                </p>
+                <p><b id="dollar2">1399.00</b><span id="wert2">€</span></p>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center">
+                      <button onclick="mackbook()" 
+                      class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded" >Add to cart
+                    </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="product04.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sony Xperia Z4 Tablet-PC LTE 4G</h5>
+                  <p class="card-text">
+                    Das Xperia Z4 Tablet ist genau da zu Hause, wo Sie sich gerade aufhalten - unterwegs, im Büro oder daheim. Freuen Sie sich über einen Assistenten, auf den Sie sich jeden Tag verlassen können. </p>
+                    <p><b id="dollar3">499.00</b><span id="wert3">€</span></p>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center">
+                      <button onclick="sonyTablet()"
+                      class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded">Add to cart
+
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                  <img src="product05.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sony WH-XB910N kabellose </h5>
+                    <p class="card-text">Sony WH-H910N kabellose High-Resolution Kopfhörer (Noise Cancelling, Bluetooth, Quick Attention Modus, bis zu 40 Std. Akkulaufzeit </p>
+                    <p><b id="dollar4">299.00</b><span id="wert4">€</span></p>
+                  </div>
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center">
+                      <button onclick="sonykabellose()"
+                      class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded">Add to cart
+
+                      </button>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="product06.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">ASUS</h5>
+                    <p class="card-text">ASUS VivoBook 15 D515DA-BQ299T Laptop 39,6 cm (15,6 Zoll, Full HD, 1920x1080, IPS-Level, matt) Notebook (AMD R3-3250U, 8GB RAM, 512GB SSD, AMD Radeon Graphics, Win10H) Slate Grey </p>
+                    <p><b id="dollar5">699.00</b><span id="wert5">€</span></p>
+                  </div>
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center">
+                      <button onclick="asusVivoBook()" 
+                       class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded" >Add to cart
+
+                      </button>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="product07.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Samsung S7 Gold 32GB</h5>
+                    <p class="card-text">
+                        Samsung Galaxy S7 Edge G935F LTE Smartphone, 5,5 Zoll (14 cm), 4G, 32 GB, 12 MP Kamera, Android, Goldfarben ,MicroSD um bis zu 200 GB
+
+                    </p>
+                    <p><b id="dollar6">350.00</b><span id="wert6">€</span></p>
+                  </div>
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-tnspraarent">
+                    <div class="text-center">
+                      <button onclick="samsung()"
+                       class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded">Add to cart
+
+                      </button>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="product08.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">ASUS</h5>
+                    <p class="card-text">ASUS VivoBook S15 S513EA-BQ059T Laptop 39.6 cm (15.6 Zoll, Full HD, 1920x1080, matt) Notebook (Intel Core i5-1135G7, 8GB RAM, 512GB SSD, Intel UHD Graphics, Win10H) Star Black </p>
+                    <p><b id="dollar7">899.00</b><span id="wert7">€</span></p>
+                  </div>
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center">
+                      <button onclick="asus()" 
+                       class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded">Add to cart
+
+                      </button>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="product09.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Camera-1200</h5>
+                    <p class="card-text">GREPRO Kinder Kamera, 2.0”Display Digitalkamera Kinder Geschenke für 3 4 5 6 8 7 9 Jahre Jungen und mädchen, 1080P HD Anti-Drop Fotoapparat Kinder für Weihnachten, Geburtstag Spielzeug Geschenke </p>
+                    <p><b id="dollar8">399.00</b><span id="wert8">€</span></p>
+                  </div>
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center">
+                      <button onclick="camera()" 
+                       class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded">Add to cart
+
+                      </button>
+                    </div>
+                </div>
+                </div>
+              </div>
+          </div>
+    </main>
+    <!-- Footer-->
+    <footer class="py-3 mt-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; ElectroShop 2021</p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
+
+     
+    </script>
+    <!-- JS-->
+    <!-- <script src="scripts.js"></script> -->
+
+
+    
+    
+</body>
+</html>
