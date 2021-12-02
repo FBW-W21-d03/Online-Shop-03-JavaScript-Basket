@@ -1,0 +1,25 @@
+body{
+    background-color: #303440;
+}
+
+.logo-nav{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div a{
+    margin-left: 25px;
+    font-size: xx-large;
+}
+
+#cover{
+    background-image: url(./01_Detail.jpg);
+    height: 400px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(218, 90, 90);
+}
+
+span{
+    font-size: xx-large;
+    color: red;
+}
