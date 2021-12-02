@@ -12,9 +12,15 @@ function kaufen(produktName, preis) {
     "</td><td>" +
     preis +
     " €</td></tr>";
+
   // Endsumme neu berechnen
-  document.getElementById("total").innerHTML =
-    parseInt(document.getElementById("total").innerHTML) + preis + " €";
+  let letzteSumme = document.getElementById("total").innerHTML;
+  // entfernen des Euro-Zeichens, damit String in Zahl umgewandelt werden kann
+  letzteSumme = letzteSumme.replace(" €", "");
+  // Umwandlung von String in Zahl
+  letzteSumme = Number(letzteSumme);
+  // Rechnen mit der Zahl und anschließend Euro-Zeichen wieder anhängen
+  document.getElementById("total").innerHTML = letzteSumme + preis + " €";
 }
 
 // Alte Funktionen für Aufgabe Teil 1 + 2 - Onlineshop / Währung

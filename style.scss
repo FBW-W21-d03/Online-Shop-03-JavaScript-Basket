@@ -41,8 +41,23 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: rgba(255, 255, 255, 0.33);
+  a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.67s, text-shadow 0.67s;
+  }
+  a:hover {
+    background-color: $mint-dark;
+    text-shadow: 1px 1px 0 #000;
+  }
   #btn-currency {
-    background-color: $mint;
+    background-color: $mint-dark;
+    transition: background-color 0.67s;
     cursor: pointer;
     font-size: 1.125rem;
     padding: 0.5rem 1rem;
@@ -158,7 +173,8 @@ main {
   }
   button {
     flex-basis: 50%;
-    background-color: $mint;
+    background-color: darken($mint, 5%);
+    transition: background-color 0.67s;
     font-size: 1.125rem;
     padding: 0.5rem 2rem;
     border-radius: 0.5rem;

@@ -21,8 +21,14 @@
   <body>
     <!-- Header -->
     <header>
-      <img src="./images/logo.png" alt="Logo" />
-      <a href="#">About</a>
+      <a href="index.html">
+        <img src="./images/logo.png" alt="Logo" />
+      </a>
+      <nav>
+        <a href="#">Produkte</a>
+        | <a href="#">Team</a> | <a href="#">Jobs</a> |
+        <a href="#">Kontakt</a>
+      </nav>
       <button onclick="switchCurrency()" id="btn-currency">
         <img class="flag" src="./images/flag-us.svg" alt="" />
         Preise in Dollar anzeigen
@@ -44,10 +50,8 @@
         </tbody>
         <tfoot>
           <th>Summe</th>
-          <td id="total">
-            0
-            <!-- Hier schreibt JavaScript die Summe rein -->
-          </td>
+          <!-- Hier schreibt JavaScript die Summe rein -->
+          <td id="total">0</td>
         </tfoot>
       </table>
     </section>
