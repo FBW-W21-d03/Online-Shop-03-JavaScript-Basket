@@ -106,6 +106,7 @@ function myFunction(){
 }
 
 
+//listen form
 
 function nootbook(){
     document.getElementById("list").innerHTML =  
@@ -232,3 +233,135 @@ function cam(){
 
     console.log("esgeht8")
 }
+
+//Tabellenform
+
+function nootbook(){
+    document.getElementById("list2").innerHTML =  
+    document.getElementById("list2").innerHTML
+     + 
+     "<td>" + "ASUS Vivobook S17" + "</td>" + "<td>" + "499.00 €" + "</td>";
+
+    document.getElementById("summe2").innerHTML = 
+    Number(document.getElementById("summe2").innerHTML)
+     + 
+    Number(document.getElementById("card-link").innerHTML);
+
+    console.log("esgeht");
+}
+
+function headphon(){
+    document.getElementById("list2").innerHTML =  
+    document.getElementById("list2").innerHTML
+     + 
+     "<td>" + "SENNHEISER HD 450BT Over-ear" + "</td>" + "<td>" + "299.00 €" + "</td>";
+
+    document.getElementById("summe2").innerHTML = 
+    Number(document.getElementById("summe2").innerHTML)
+     + 
+    Number(document.getElementById("card-link1").innerHTML);
+
+    console.log("esgeht1");
+}
+
+
+function nootbook1(){
+    document.getElementById("list2").innerHTML =  
+    document.getElementById("list2").innerHTML
+     + 
+     "<td>" + "SAMSUNG GALAXY BOOK PRO 360 EVO" + "</td>" + "<td>" + "289.00 €" + "</td>";
+
+    document.getElementById("summe2").innerHTML = 
+    Number(document.getElementById("summe2").innerHTML)
+     + 
+    Number(document.getElementById("card-link2").innerHTML);
+
+
+    console.log("esgeht2");
+}
+
+function ipad1(){
+    document.getElementById("list2").innerHTML =  
+    document.getElementById("list2").innerHTML
+     + 
+     "<td>" + "Sony TEB-15DSKP Tablet" + "</td>" + "<td>" + "173.00 €" + "</td>";
+
+    document.getElementById("summe2").innerHTML = 
+    Number(document.getElementById("summe2").innerHTML)
+     + 
+    Number(document.getElementById("card-link3").innerHTML);
+
+    console.log("esgeht3");
+}
+
+function headphone1(){
+    document.getElementById("list2").innerHTML =  
+    document.getElementById("list2").innerHTML
+     + 
+     "<td>" + "SONY WH-1000XM3 Noise Cancelling" + "</td>" + "<td>" + "530.00 €" + "</td>";
+
+    document.getElementById("summe2").innerHTML = 
+    Number(document.getElementById("summe2").innerHTML)
+     + 
+    Number(document.getElementById("card-link4").innerHTML);
+
+    console.log("esgeht4");
+}
+
+function nootbook2(){
+    document.getElementById("list2").innerHTML =  
+    document.getElementById("list2").innerHTML
+     + 
+     "<td>" + "MSI KATANA (GF76) Gaming Notebook" + "</td>" + "<td>" + "999.00 €" + "</td>";
+
+    document.getElementById("summe2").innerHTML = 
+    Number(document.getElementById("summe2").innerHTML)
+     + 
+    Number(document.getElementById("card-link5").innerHTML);
+
+    console.log("esgeht5");
+}
+
+function phone(){
+    document.getElementById("list2").innerHTML =  
+    document.getElementById("list2").innerHTML
+     + 
+     "<td>" + "SAMSUNG Galaxy S7 32 GB Black-Onyx" + "</td>" + "<td>" + "329.00 €" + "</td>";
+
+    document.getElementById("summe2").innerHTML = 
+    Number(document.getElementById("summe2").innerHTML)
+     + 
+    Number(document.getElementById("card-link6").innerHTML);
+
+    console.log("esgeht6");
+}
+
+function nootbook3(){
+    document.getElementById("list2").innerHTML =  
+    document.getElementById("list2").innerHTML
+     + 
+     "<td>" + "ASUS ROG Strix G17 (G713QM-HX019T)" + "</td>" + "<td>" + "890.00 €" + "</td>";
+
+    document.getElementById("summe2").innerHTML = 
+    Number(document.getElementById("summe2").innerHTML)
+     + 
+    Number(document.getElementById("card-link7").innerHTML);
+
+    console.log("esgeht7");
+}
+
+function cam(){
+    document.getElementById("list2").innerHTML =  
+    document.getElementById("list2").innerHTML
+     + 
+     "<tr><td>Digitalkamera 1080P HD</td><td>325.00</td><td>€</td></tr>";
+
+    document.getElementById("summe2").innerHTML = 
+    Number(document.getElementById("summe2").innerHTML)
+     + 
+    Number(document.getElementById("card-link8").innerHTML);
+
+    console.log("esgeht8");
+}
+
+

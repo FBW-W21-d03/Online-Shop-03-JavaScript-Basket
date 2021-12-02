@@ -23,3 +23,7 @@ span{
     font-size: xx-large;
     color: red;
 }
+
+td{
+    border: 2px solid black;
+}
