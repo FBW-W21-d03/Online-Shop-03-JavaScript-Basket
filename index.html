@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--JavaScript-->
+    <script defer src="./index.js"></script>
+    <title>My Online shop</title>
+</head>
+
+<body>
+    <header class="d-flex justify-content-between p-5 bg-primary">
+        <img src="./logo.png" class="rounded ml-2" alt="logo">
+        <button type="button" class="btn btn-dark" id="wechselBtn" onclick="wechsel()">
+            In $ anzeigen!
+        </button>
+    </header>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="card mb-4">
+                    <img src="./product01.png" class="card-img-top" alt="product01" style="height: 350px;">
+                    <div class="card-body overflow-auto" style="height: 150px;">
+                        <h5 class="card-title">MacBook Pro (16 Zoll)</h5>
+                        <p class="card-text">10-Core CPU, 16-Core GPU, 16GB Unified Memory, 512GB SSD Storage¹,
+                            16-core Neural Engine, 16-inch Liquid Retina XDR display ,Three
+                            Thunderbolt 4 ports, HDMI port, SDXC card slot, MagSafe 3 port Magic
+                            Keyboard with Touch ID, Force Touch trackpad, 140W USB-C Power Adapter
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span id="preis1" class="card-text text-danger">2249</span>
+                        <span id="waehrung1">€</span>
+                        <div class="my-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
+                        <a href="#" class="btn btn-success">Kaufen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="card mb-4">
+                    <img src="./product02.png" class="card-img-top" alt="product02" style="height: 350px;">
+                    <div class="card-body overflow-auto" style="height: 150px;">
+                        <h5 class="card-title">AKG K-240 Studio Kopfhörer</h5>
+                        <p class="card-text">ohrumschließend, halboffen, dynamisch, neue XXL-Kapsel, Impedanz: 55
+                            Ohm, Übertragungsbereich: 15 - 25.000 Hz, Empfindlichkeit: 104 dB/V,
+                            Klirrfaktor &lt; 0,3 %, Nennbelastbarkeit: 200 mW ,Bügelband-Automatik
+                            für perfekten Sitz, einseitige Kabelführung für bequemes Handling,
+                            Gewicht mit Kabel: 284 g
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span id="preis2" class="card-text text-danger">55</span>
+                        <span id="waehrung2">€</span>
+                        <div class="my-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
+                        <a href="#" class="btn btn-success">Kaufen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="card mb-4">
+                    <img src="./product03.png" class="card-img-top" alt="product03" style=" height: 350px;">
+                    <div class="card-body overflow-auto" style="height: 150px;">
+                        <h5 class="card-title">MacBook Pro (14 Zoll)</h5>
+                        <p class="card-text">8‑Core CPU, 14‑Core GPU, 16 GB gemeinsamer Arbeitsspeicher, 512 GB SSD
+                            Speicher¹, 16‑Core Neural Engine, 14" Liquid Retina XDR Display, Drei
+                            Thunderbolt 4 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz,
+                            MagSafe 3 Anschluss, Magic Keyboard mit Touch ID, Force Touch
+                            Trackpad, 67W USB‑C Power Adapter
+                            action.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span id="preis3" class="card-text text-danger">1900</span>
+                        <span id="waehrung3">€</span>
+                        <div class="my-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
+                        <a href="#" class="btn btn-success">Kaufen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="card mb-4">
+                    <img src="./product04.png" class="card-img-top" alt="product04" style=" height: 350px;">
+                    <div class="card-body overflow-auto" style="height: 150px;">
+                        <h5 class="card-title">Sony Xperia Z4</h5>
+                        <p class="card-text">Tablet-PC LTE 4G (25,6 cm (10,1 Zoll) TFT-Display,
+                            Octa-Core-Prozessor, 8,1 Megapixel-Kamera, 32 GB interner Speicher,
+                            Android 5.0) schwarz
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span id="preis4" class="card-text text-danger">499</span>
+                        <span id="waehrung4">€</span>
+                        <div class="my-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
+                        <a href="#" class="btn btn-success">Kaufen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="card mb-4">
+                    <img src="./product05.png" class="card-img-top" alt="product05" style=" height: 350px;">
+                    <div class="card-body overflow-auto" style="height: 150px;">
+                        <h5 class="card-title">SONY WH-1000XM3</h5>
+                        <p class="card-text">Aktives Noise Cancelling: Optimierung der Geräuschminimierung an
+                            Bewegungsmuster sowie Anpassung an den Luftdruck Quick Attention
+                            Modus: blitzschnell die Umgebung durch intuitives Handauflegen
+                            wahrnehmen und Gestenkontrolle über Ohrmuschel zur Bedienung des
+                            Kopfhörers Kompatibel mit Amazon Alexa.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span id="preis5" class="card-text text-danger">199</span>
+                        <span id="waehrung5">€</span>
+                        <div class="my-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
+                        <a href="#" class="btn btn-success">Kaufen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="card mb-4">
+                    <img src="./product06.png" class="card-img-top" alt="product06" style=" height: 350px;">
+                    <div class="card-body overflow-auto" style="height: 150px;">
+                        <h5 class="card-title">MSI Pulse GL76 11UEK-033</h5>
+                        <p class="card-text">MSI Pulse GL76 11UEK-033 (17,3 Zoll / 144Hz) Gaming-Laptop (Intel Core
+                            i7-11800H+HM570, 6GB GDDR6 VRAM, 1TB, Windows 10 Home), Intel Core
+                            i7-11800H Prozessor der 11. Generation (8-Kern, bis 4,60 GHz, 24 MB
+                            SmartCache) schnelle Nvidia GeForce RTX 3060 6GB GDDR6 VRAM
+                            High-End-Grafikkarte
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span id="preis6" class="card-text text-danger">1699</span>
+                        <span id="waehrung6">€</span>
+                        <div class="my-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
+                        <a href="#" class="btn btn-success">Kaufen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="card mb-4">
+                    <img src="./product07.png" class="card-img-top" alt="product07" style=" height: 350px;">
+                    <div class="card-body overflow-auto" style="height: 150px;">
+                        <h5 class="card-title">Samsung Galaxy S21 Ultra 5G</h5>
+                        <p class="card-text">Vollendete Form: neuartiges Kameradesign und mattes Farbfinish Voller
+                            Details: hochauflösende Aufnahmen fast wie vom Profi dank 108
+                            MP-Kamera und 8K-Video Voller Fokus: mit Video Snap und Single Take
+                            Lieblingsmomente einfangen - egal wann, egal wo. Volle Galaxy-Power:
+                            superschneller Prozessor, starker Akku
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span id="preis7" class="card-text text-danger">835</span>
+                        <span id="waehrung7">€</span>
+                        <div class="my-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
+                        <a href="#" class="btn btn-success">Kaufen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="card mb-4">
+                    <img src="./product08.png" class="card-img-top" alt="product08" style=" height: 350px;">
+                    <div class="card-body overflow-auto" style="height: 150px;">
+                        <h5 class="card-title">ASUS X571</h5>
+                        <p class="card-text">Für eine reibungslose und reaktionsschnelle Rechenleistung wird das
+                            ASUS F571 von Intel® Prozessoren angetrieben. Mit der diskreten bis zu
+                            NVIDIA® GeForce® GTX 1650 Grafikkarte, bis zu 8GB RAM und Windows 10
+                            Pro ist der ASUS F571 Dein idealer täglicher Begleiter.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span id="preis8" class="card-text text-danger">449</span>
+                        <span id="waehrung8">€</span>
+                        <div class="my-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
+                        <a href="#" class="btn btn-success">Kaufen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="card mb-4">
+                    <img src="./product09.png" class="card-img-top" alt="product09" style=" height: 350px;">
+                    <div class="card-body overflow-auto" style="height: 150px;">
+                        <h5 class="card-title">Rekam Presto X4</h5>
+                        <p class="card-text">Matrix resolution 4.2 Mpix Viewfinder optic Display TFT 1.6 "built-in
+                            Focal length 5.1 mm Focal length (35mm) 31 mm Focus modes fixed focus
+                            Minimum focusing distance 100 cm Minimum Focusing Distance (Macro) 20
+                            cm Lens aperture F / 2.9-8.0 Digital Zoom 4x Matrix size 1 / 2.5 "
+                            Matrix sensitivity ISO auto Exposure
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span id="preis9" class="card-text text-danger">89</span>
+                        <span id="waehrung9">€</span>
+                        <div class="my-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
+                        <a href="#" class="btn btn-success">Kaufen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
