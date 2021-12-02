@@ -43,6 +43,17 @@
               <button class="btn2 btn-primary" onclick="dollarInEuro()">In € anzeigen!</button>
               </div>
     </section>
+
+    <article>
+      <section>
+        <h2 id="warenkorb">Warenkorb</h2>
+        <ul id="ekList"></ul>
+        <span>Gesamtsumme:</span>
+        <span id="gesamtbetrag">0</span>
+        <span>€</span>
+
+      </section>
+    </article>
 </header> 
 
 <main>
@@ -55,7 +66,7 @@
           <span id="ch1" class="changer">399</span>
           <span id="curr1" class="currChanger">€</span>
           <br><br>
-          <a onclick="kaufen1()" href="#" class="btn btn-primary">In den Warenkorb</a>
+          <a onclick="kaufen1()" href="#ekList" class="btn btn-primary">In den Warenkorb</a>
         </div>
       </div>
 
@@ -68,7 +79,7 @@
           <span id="ch2" class="changer">99</span>
           <span id="curr2" class="currChanger">€</span>
           <br><br>
-          <a onclick="kaufen2()" href="#" class="btn btn-primary">In den Warenkorb</a>
+          <a onclick="kaufen2()" href="#ekList" class="btn btn-primary">In den Warenkorb</a>
         </div>
       </div>
 
@@ -80,7 +91,7 @@
           <span id="ch3" class="changer">599</span>
           <span id="curr3" class="currChanger">€</span>
           <br><br>
-          <a onclick="kaufen3()" href="#" class="btn btn-primary">In den Warenkorb</a>
+          <a onclick="kaufen3()" href="#ekList" class="btn btn-primary">In den Warenkorb</a>
         </div>
       </div>
 
@@ -93,7 +104,7 @@
           <span id="ch4" class="changer">183</span>
           <span id="curr4" class="currChanger">€</span>
           <br><br>
-          <a onclick="kaufen4()" href="#" class="btn btn-primary">In den Warenkorb</a>
+          <a onclick="kaufen4()" href="#ekList" class="btn btn-primary">In den Warenkorb</a>
         </div>
       </div>
 
@@ -105,7 +116,7 @@
           <span id="ch5" class="changer">39</span>
           <span id="curr5" class="currChanger">€</span>
           <br><br>
-          <a onclick="kaufen5()" href="#" class="btn btn-primary">In den Warenkorb</a>
+          <a onclick="kaufen5()" href="#ekList" class="btn btn-primary">In den Warenkorb</a>
         </div>
       </div>
 
@@ -118,7 +129,7 @@
           <span id="ch6" class="changer">299</span>
           <span id="curr6" class="currChanger">€</span>
           <br><br>
-          <a onclick="kaufen6()" href="#" class="btn btn-primary">In den Warenkorb</a>
+          <a onclick="kaufen6()" href="#ekList" class="btn btn-primary">In den Warenkorb</a>
         </div>
       </div>
 
@@ -131,7 +142,7 @@
           <span id="ch7" class="changer">149</span>
           <span id="curr7" class="currChanger">€</span>
           <br><br>
-          <a onclick="kaufen7()" href="#" class="btn btn-primary">In den Warenkorb</a>
+          <a onclick="kaufen7()" href="#ekList" class="btn btn-primary">In den Warenkorb</a>
         </div>
       </div>
 
@@ -143,7 +154,7 @@
           <span  id="ch8" class="changer">285</span>
           <span id="curr8" class="currChanger">€</span>
           <br><br>
-          <a onclick="kaufen8()" href="#" class="btn btn-primary">In den Warenkorb</a>
+          <a onclick="kaufen8()" href="#ekList" class="btn btn-primary">In den Warenkorb</a>
         </div>
       </div>
 
@@ -156,21 +167,12 @@
           <span  id="ch9" class="changer">35</span>
           <span id="curr9" class="currChanger">€</span>
           <br><br>
-          <a onclick="kaufen9()" href="#" class="btn btn-primary">In den Warenkorb</a>
+          <a onclick="kaufen9()" href="#ekList" class="btn btn-primary">In den Warenkorb</a>
         </div>
       </div>
     </article>
 
-    <article>
-      <section>
-        <h2>Warenkorb</h2>
-        <ul id="ekList"></ul>
-        <span>Gesamtsumme:</span>
-        <span id="gesamtbetrag">0</span>
-        <span>€</span>
 
-      </section>
-    </article>
   </main>
 
   <footer>
