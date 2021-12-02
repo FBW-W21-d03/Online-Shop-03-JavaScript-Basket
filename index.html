@@ -23,13 +23,24 @@
             In $ anzeigen!
         </button>
     </header>
-    <div class="container py-5">
+
+
+    <div class="sticky-top m-2 p-3 bg-light d-inline-block text-dark" style="width: 380px;">
+        <h2><i class="far fa-list-alt"></i> Einkaufsliste</h2>
+        <ul id="einkaufListe"></ul>
+        <span>Gesamtpreis aller Produkte:</span>
+        <span id="gesamtPreis" class="text-danger">0</span>
+        <span id="GPWaehrung">€</span>
+    </div>
+
+
+    <div class="container">
         <div class="row">
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="card mb-4">
                     <img src="./product01.png" class="card-img-top" alt="product01" style="height: 350px;">
                     <div class="card-body overflow-auto" style="height: 150px;">
-                        <h5 class="card-title">MacBook Pro (16 Zoll)</h5>
+                        <h5 id="produkt1" class="card-title">MacBook Pro (16 Zoll)</h5>
                         <p class="card-text">10-Core CPU, 16-Core GPU, 16GB Unified Memory, 512GB SSD Storage¹,
                             16-core Neural Engine, 16-inch Liquid Retina XDR display ,Three
                             Thunderbolt 4 ports, HDMI port, SDXC card slot, MagSafe 3 port Magic
@@ -47,8 +58,8 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
-                        <a href="#" class="btn btn-success">Kaufen</a>
+                        <button class="btn btn-primary" onclick="addToCart1()">In den Warenkorb</button>
+                        <button class="btn btn-success">Kaufen</button>
                     </div>
                 </div>
             </div>
@@ -56,7 +67,7 @@
                 <div class="card mb-4">
                     <img src="./product02.png" class="card-img-top" alt="product02" style="height: 350px;">
                     <div class="card-body overflow-auto" style="height: 150px;">
-                        <h5 class="card-title">AKG K-240 Studio Kopfhörer</h5>
+                        <h5 id="produkt2" class="card-title">AKG K-240 Studio Kopfhörer</h5>
                         <p class="card-text">ohrumschließend, halboffen, dynamisch, neue XXL-Kapsel, Impedanz: 55
                             Ohm, Übertragungsbereich: 15 - 25.000 Hz, Empfindlichkeit: 104 dB/V,
                             Klirrfaktor &lt; 0,3 %, Nennbelastbarkeit: 200 mW ,Bügelband-Automatik
@@ -75,8 +86,8 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
-                        <a href="#" class="btn btn-success">Kaufen</a>
+                        <button class="btn btn-primary" onclick="addToCart2()">In den Warenkorb</button>
+                        <button class="btn btn-success">Kaufen</button>
                     </div>
                 </div>
             </div>
@@ -84,7 +95,7 @@
                 <div class="card mb-4">
                     <img src="./product03.png" class="card-img-top" alt="product03" style=" height: 350px;">
                     <div class="card-body overflow-auto" style="height: 150px;">
-                        <h5 class="card-title">MacBook Pro (14 Zoll)</h5>
+                        <h5 id="produkt3" class="card-title">MacBook Pro (14 Zoll)</h5>
                         <p class="card-text">8‑Core CPU, 14‑Core GPU, 16 GB gemeinsamer Arbeitsspeicher, 512 GB SSD
                             Speicher¹, 16‑Core Neural Engine, 14" Liquid Retina XDR Display, Drei
                             Thunderbolt 4 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz,
@@ -103,8 +114,8 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
-                        <a href="#" class="btn btn-success">Kaufen</a>
+                        <button class="btn btn-primary" onclick="addToCart3()">In den Warenkorb</button>
+                        <button class="btn btn-success">Kaufen</button>
                     </div>
                 </div>
             </div>
@@ -112,7 +123,7 @@
                 <div class="card mb-4">
                     <img src="./product04.png" class="card-img-top" alt="product04" style=" height: 350px;">
                     <div class="card-body overflow-auto" style="height: 150px;">
-                        <h5 class="card-title">Sony Xperia Z4</h5>
+                        <h5 id="produkt4" class="card-title">Sony Xperia Z4</h5>
                         <p class="card-text">Tablet-PC LTE 4G (25,6 cm (10,1 Zoll) TFT-Display,
                             Octa-Core-Prozessor, 8,1 Megapixel-Kamera, 32 GB interner Speicher,
                             Android 5.0) schwarz
@@ -129,8 +140,8 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
-                        <a href="#" class="btn btn-success">Kaufen</a>
+                        <button class="btn btn-primary" onclick="addToCart4()">In den Warenkorb</button>
+                        <button class="btn btn-success">Kaufen</button>
                     </div>
                 </div>
             </div>
@@ -138,7 +149,7 @@
                 <div class="card mb-4">
                     <img src="./product05.png" class="card-img-top" alt="product05" style=" height: 350px;">
                     <div class="card-body overflow-auto" style="height: 150px;">
-                        <h5 class="card-title">SONY WH-1000XM3</h5>
+                        <h5 id="produkt5" class="card-title">SONY WH-1000XM3</h5>
                         <p class="card-text">Aktives Noise Cancelling: Optimierung der Geräuschminimierung an
                             Bewegungsmuster sowie Anpassung an den Luftdruck Quick Attention
                             Modus: blitzschnell die Umgebung durch intuitives Handauflegen
@@ -157,8 +168,8 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
-                        <a href="#" class="btn btn-success">Kaufen</a>
+                        <button class="btn btn-primary" onclick="addToCart5()">In den Warenkorb</button>
+                        <button class="btn btn-success">Kaufen</button>
                     </div>
                 </div>
             </div>
@@ -166,7 +177,7 @@
                 <div class="card mb-4">
                     <img src="./product06.png" class="card-img-top" alt="product06" style=" height: 350px;">
                     <div class="card-body overflow-auto" style="height: 150px;">
-                        <h5 class="card-title">MSI Pulse GL76 11UEK-033</h5>
+                        <h5 id="produkt6" class="card-title">MSI Pulse GL76 11UEK-033</h5>
                         <p class="card-text">MSI Pulse GL76 11UEK-033 (17,3 Zoll / 144Hz) Gaming-Laptop (Intel Core
                             i7-11800H+HM570, 6GB GDDR6 VRAM, 1TB, Windows 10 Home), Intel Core
                             i7-11800H Prozessor der 11. Generation (8-Kern, bis 4,60 GHz, 24 MB
@@ -185,8 +196,8 @@
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
-                        <a href="#" class="btn btn-success">Kaufen</a>
+                        <button class="btn btn-primary" onclick="addToCart6()">In den Warenkorb</button>
+                        <button class="btn btn-success">Kaufen</button>
                     </div>
                 </div>
             </div>
@@ -194,7 +205,7 @@
                 <div class="card mb-4">
                     <img src="./product07.png" class="card-img-top" alt="product07" style=" height: 350px;">
                     <div class="card-body overflow-auto" style="height: 150px;">
-                        <h5 class="card-title">Samsung Galaxy S21 Ultra 5G</h5>
+                        <h5 id="produkt7" class="card-title">Samsung Galaxy S21 Ultra 5G</h5>
                         <p class="card-text">Vollendete Form: neuartiges Kameradesign und mattes Farbfinish Voller
                             Details: hochauflösende Aufnahmen fast wie vom Profi dank 108
                             MP-Kamera und 8K-Video Voller Fokus: mit Video Snap und Single Take
@@ -213,8 +224,8 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
-                        <a href="#" class="btn btn-success">Kaufen</a>
+                        <button class="btn btn-primary" onclick="addToCart7()">In den Warenkorb</button>
+                        <button class="btn btn-success">Kaufen</button>
                     </div>
                 </div>
             </div>
@@ -222,7 +233,7 @@
                 <div class="card mb-4">
                     <img src="./product08.png" class="card-img-top" alt="product08" style=" height: 350px;">
                     <div class="card-body overflow-auto" style="height: 150px;">
-                        <h5 class="card-title">ASUS X571</h5>
+                        <h5 id="produkt8" class="card-title">ASUS X571</h5>
                         <p class="card-text">Für eine reibungslose und reaktionsschnelle Rechenleistung wird das
                             ASUS F571 von Intel® Prozessoren angetrieben. Mit der diskreten bis zu
                             NVIDIA® GeForce® GTX 1650 Grafikkarte, bis zu 8GB RAM und Windows 10
@@ -240,8 +251,8 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
-                        <a href="#" class="btn btn-success">Kaufen</a>
+                        <button class="btn btn-primary" onclick="addToCart8()">In den Warenkorb</button>
+                        <button class="btn btn-success">Kaufen</button>
                     </div>
                 </div>
             </div>
@@ -249,7 +260,7 @@
                 <div class="card mb-4">
                     <img src="./product09.png" class="card-img-top" alt="product09" style=" height: 350px;">
                     <div class="card-body overflow-auto" style="height: 150px;">
-                        <h5 class="card-title">Rekam Presto X4</h5>
+                        <h5 id="produkt9" class="card-title">Rekam Presto X4</h5>
                         <p class="card-text">Matrix resolution 4.2 Mpix Viewfinder optic Display TFT 1.6 "built-in
                             Focal length 5.1 mm Focal length (35mm) 31 mm Focus modes fixed focus
                             Minimum focusing distance 100 cm Minimum Focusing Distance (Macro) 20
@@ -268,15 +279,13 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <a href="#" class="btn btn-primary">In den Warenkorb</a>
-                        <a href="#" class="btn btn-success">Kaufen</a>
+                        <button class="btn btn-primary" onclick="addToCart9()">In den Warenkorb</button>
+                        <button class="btn btn-success">Kaufen</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
