@@ -1,7 +1,9 @@
 :root {font-family: 'Atomic Age', cursive; 
     font-family: 'Aubrey', cursive; 
     font-family: 'Orbitron', sans-serif;
-    background-color: #735E64; }
+    background-color: #735E64; 
+}
+footer {background-color: #735E64;}
    
 h1 {text-align: center;text-decoration: underline;} /* Überschrift mittig Text und Unterstrichen */
 .nav-item, .media-links {
@@ -49,20 +51,20 @@ a{
   transition: all 1s;} /* langsammer übergang */
   
 /* Button hover */
-a:hover {background-color: #EBC56E; /* Farbe fom Button ändert sich */
-  border-radius: 50%; /* Rahmen Breite */
-  font-family: cursive;} /* Schrift Art Kursiv */
-
+/* a:hover {background-color: #EBC56E; /* Farbe fom Button ändert sich */
+/*  border-radius: 50%; /* Rahmen Breite */
+/*  font-family: cursive;} /* Schrift Art Kursiv */
 
     a{text-decoration: none; /* Deko */
         background-color: #3F57D6;
         padding: 10px 20px; /* den abstand im block zwischen text und border */
         color: #EBC56E; /* Farbe */
-        border-radius: 8px; /* abgerundet */
-        transition: all 1s; /* langsammer übergang */
+/*        border-radius: 8px; /* abgerundet */
+/*        transition: all 1s; /* langsammer übergang */
         }
-        a:hover {background-color: #D48059;
-        border-radius: 40%;}
+/*       a:hover {background-color: #D48059;
+/*       border-radius: 40%;}
+        
 .kontakt {display: flex;}
 
 .container2 {display: flex;}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Online-Shop</h1>
+
+    <p>Laptop</p>
+    <span id="preis">320.00</span>
+    <span>€</span>
+    <button onclick="kaufen()">Kaufen!</button>
+
+    <p>Kopfhörer</p>
+    <span id="preis1">50.00</span>
+    <span>€</span>
+    <button onclick="kaufen1()">Kaufen!</button>
+
+    <p>Gaming-Laptop Samsung </p>
+    <span id="preis2">860.00</span>
+    <span>€</span>
+    <button onclick="kaufen2()">Kaufen!</button>
+
+    <h2>Warenkorb</h2>
+    <ul id="list"></ul>
+    
+    <span>Gesamtsumme:</span>
+    <span id="gesamtbetrag">0.00</span>
+    <span>€</span>
+
+    <script>
+        /*
+        TODO: Zeige eine List mit gekauften Produkten
+        */
+        function kaufen() {
+            document.getElementById("list").innerHTML =
+                document.getElementById("list").innerHTML + "<li>" + "Laptop - 320 €" + "</li>";
+
+            // Gesamtsumme
+            document.getElementById("gesamtbetrag").innerHTML =
+                // gesamtbetrag + neues Produkt
+                Number(document.getElementById("gesamtbetrag").innerHTML)
+                +
+                Number(document.getElementById("preis").innerHTML);
+        }
+        /* karte 1 */
+        function kaufen1() {
+            document.getElementById("list").innerHTML =
+                document.getElementById("list").innerHTML + "<li>" + "2D Kopfhörer - 50.00 €" + "</li>";
+                document.getElementById("gesamtbetrag").innerHTML =
+                Number(document.getElementById("gesamtbetrag").innerHTML)
+                +
+                Number(document.getElementById("preis1").innerHTML);
+        }
+        /* karte 1 */
+        function kaufen2() {
+            document.getElementById("list").innerHTML =
+                document.getElementById("list").innerHTML + "<li>" + " -Gaming-Laptop Samsung 860.00 €" + "</li>";
+                document.getElementById("gesamtbetrag").innerHTML =
+                Number(document.getElementById("gesamtbetrag").innerHTML)
+                +
+                Number(document.getElementById("preis2").innerHTML);
+        }
+    </script>
+</body>
+
+</html>
