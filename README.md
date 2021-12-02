@@ -1,14 +1,23 @@
-# Online-Shop-JavaScript-Basket
+# Online-Shop
 
 ## Aufgabenstellung
-Dein Online-Shop soll um eine JavaScript-Funktionalität erweitert werden.
+Deine Aufgabe ist es, einen Online Shop zu bauen. Es soll sich um ein Elektrofachgeschäft handeln.
 
-Der Kunde soll die Gesamtsumme seiner Einkäufe sehen können.
+Dein Geschäft hat den Namen Electro und bietet 9 Produkte an. Kunden haben die Möglichkeit, eines deiner Produkte zu kaufen.
 
-Dazu bietest du ihm am Ende deiner Hauptseite eine Auflistung an (Liste oder Tabelle).
+## Tech Stack
+Du beginnst mit HTML und CSS. In späteren Aufgaben wirst du deine Seite um JavaScript ergänzen.
 
-Die Liste zeigt die gewählten Produkte und die zugehörigen Preise an.
+Gerne darfst du Bootstrap und Sass benutzen. Wichtig ist nur, dass du am Ende eine funktionierende Seite hast.
 
-Am Ende der Liste wird der Gesamtpreis aller Produkte angegeben.
+## Seitenaufbau
+Deine Seite muss mindestens einen Header mit einem Logo und eine Hauptseite mit den 9 Produkten beinhalten.
 
-Ein Produkt kann ausgewählt werden, indem der zugehörige Button angeklickt wird.
+Jedes Produkt hat ein Bild und einen Button als Kaufaktion. Falls ein Benutzer auf den Button klickt, passiert im Moment noch nichts.
+
+Zusätzlich muss jedes Produkt einen Namen haben. Der Name ist von dir frei wählbar.
+
+## Ressourcen
+Neben dieser Anleitung findest du ein Bild für das Logo und ein Bild für jedes Produkt. Erstelle einen Branch mit deinem Namen und lade dort deine Ergebnisse hoch.
+
+Achtung: Das Logo hat eine weiße Schrift, benutze daher einen kontraktstarken Hintergrund.
