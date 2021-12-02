@@ -58,53 +58,53 @@ function myFunction(){
     else { document.getElementById("wert9").innerHTML = ("€")
     }
      
-    if (euro){ document.getElementById("card-link").innerHTML = (document.getElementById("card-link").innerHTML * 1.14).toFixed(2)  ;
+    if (euro){ document.getElementById("preis").innerHTML = (document.getElementById("preis").innerHTML * 1.14).toFixed(2)  ;
              }
-    else { document.getElementById("card-link").innerHTML = (document.getElementById("card-link").innerHTML / 1.14).toFixed(2);
+    else { document.getElementById("preis").innerHTML = (document.getElementById("preis").innerHTML / 1.14).toFixed(2);
          }
 
-         if (euro){ document.getElementById("card-link1").innerHTML = (document.getElementById("card-link1").innerHTML * 1.14).toFixed(2)  ;
+         if (euro){ document.getElementById("preis1").innerHTML = (document.getElementById("preis1").innerHTML * 1.14).toFixed(2)  ;
              }
-    else { document.getElementById("card-link1").innerHTML = (document.getElementById("card-link1").innerHTML / 1.14).toFixed(2);
+    else { document.getElementById("preis1").innerHTML = (document.getElementById("preis1").innerHTML / 1.14).toFixed(2);
          }
 
-         if (euro){ document.getElementById("card-link2").innerHTML = (document.getElementById("card-link2").innerHTML * 1.14).toFixed(2)  ;
+         if (euro){ document.getElementById("preis2").innerHTML = (document.getElementById("preis2").innerHTML * 1.14).toFixed(2)  ;
              }
-    else { document.getElementById("card-link2").innerHTML = (document.getElementById("card-link2").innerHTML / 1.14).toFixed(2);
+    else { document.getElementById("preis2").innerHTML = (document.getElementById("preis2").innerHTML / 1.14).toFixed(2);
          }
 
-         if (euro){ document.getElementById("card-link3").innerHTML = (document.getElementById("card-link3").innerHTML * 1.14).toFixed(2)  ;
+         if (euro){ document.getElementById("preis3").innerHTML = (document.getElementById("preis3").innerHTML * 1.14).toFixed(2)  ;
              }
-    else { document.getElementById("card-link3").innerHTML = (document.getElementById("card-link3").innerHTML / 1.14).toFixed(2);
+    else { document.getElementById("preis3").innerHTML = (document.getElementById("preis3").innerHTML / 1.14).toFixed(2);
          }
 
-         if (euro){ document.getElementById("card-link4").innerHTML = (document.getElementById("card-link4").innerHTML * 1.14).toFixed(2)  ;
+         if (euro){ document.getElementById("preis4").innerHTML = (document.getElementById("preis4").innerHTML * 1.14).toFixed(2)  ;
              }
-    else { document.getElementById("card-link4").innerHTML = (document.getElementById("card-link4").innerHTML / 1.14).toFixed(2);
+    else { document.getElementById("preis4").innerHTML = (document.getElementById("preis4").innerHTML / 1.14).toFixed(2);
          }
 
-         if (euro){ document.getElementById("card-link5").innerHTML = (document.getElementById("card-link5").innerHTML * 1.14).toFixed(2)  ;
+         if (euro){ document.getElementById("preis5").innerHTML = (document.getElementById("preis5").innerHTML * 1.14).toFixed(2)  ;
              }
-    else { document.getElementById("card-link5").innerHTML = (document.getElementById("card-link5").innerHTML / 1.14).toFixed(2);
+    else { document.getElementById("preis5").innerHTML = (document.getElementById("preis5").innerHTML / 1.14).toFixed(2);
          }
 
-         if (euro){ document.getElementById("card-link6").innerHTML = (document.getElementById("card-link6").innerHTML * 1.14).toFixed(2)  ;
+         if (euro){ document.getElementById("preis6").innerHTML = (document.getElementById("preis6").innerHTML * 1.14).toFixed(2)  ;
              }
-    else { document.getElementById("card-link6").innerHTML = (document.getElementById("card-link6").innerHTML / 1.14).toFixed(2);
+    else { document.getElementById("preis6").innerHTML = (document.getElementById("preis6").innerHTML / 1.14).toFixed(2);
          }
 
-         if (euro){ document.getElementById("card-link7").innerHTML = (document.getElementById("card-link7").innerHTML * 1.14).toFixed(2)  ;
+         if (euro){ document.getElementById("preis7").innerHTML = (document.getElementById("preis7").innerHTML * 1.14).toFixed(2)  ;
              }
-    else { document.getElementById("card-link7").innerHTML = (document.getElementById("card-link7").innerHTML / 1.14).toFixed(2);
+    else { document.getElementById("preis7").innerHTML = (document.getElementById("preis7").innerHTML / 1.14).toFixed(2);
          }
          
-         if (euro){ document.getElementById("card-link8").innerHTML = (document.getElementById("card-link8").innerHTML * 1.14).toFixed(2)  ;
+         if (euro){ document.getElementById("preis8").innerHTML = (document.getElementById("preis8").innerHTML * 1.14).toFixed(2)  ;
         }
-    else { document.getElementById("card-link8").innerHTML = (document.getElementById("card-link8").innerHTML / 1.14).toFixed(2);
+    else { document.getElementById("preis8").innerHTML = (document.getElementById("preis8").innerHTML / 1.14).toFixed(2);
     }
-    if (euro){ document.getElementById("card-link9").innerHTML = (document.getElementById("card-link9").innerHTML * 1.14).toFixed(2)  ;
+    if (euro){ document.getElementById("preis9").innerHTML = (document.getElementById("preis9").innerHTML * 1.14).toFixed(2)  ;
 }
-else { document.getElementById("card-link9").innerHTML = (document.getElementById("card-link9").innerHTML / 1.14).toFixed(2);
+else { document.getElementById("preis9").innerHTML = (document.getElementById("preis9").innerHTML / 1.14).toFixed(2);
 }
 }
 
