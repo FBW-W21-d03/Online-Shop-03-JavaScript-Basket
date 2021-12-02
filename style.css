@@ -1,6 +1,6 @@
 body {
   margin: 0;
-    background-color: #000000;
+    background-image: url(black-friday-2020-sale-technik-deals-schnaeppchen-aufmacherjpg.jpg);
   }
  
 .price {
@@ -17,7 +17,8 @@ body {
   height: 650px;
 }
 
-#shine {
+.shine {
+  margin-bottom: 50px;
   font-weight: bolder;
   font-size: 80px;
   color: rgb(0, 0, 0);
@@ -34,3 +35,6 @@ body {
   }
 }
 
+li{
+  list-style: none;
+}

@@ -38,113 +38,125 @@ function zahlVonText(text) {
 }
 
 
- /*
-        TODO: Zeige eine List mit gekauften Produkten
-        */
+ 
 function macbookkaufen() {
+  document.getElementById("summe").innerHTML =
+  document.getElementById("summe").innerHTML + "<li>" + "Macbook Pro - 1299.00 €" + "</li>";
   document.getElementById("list").innerHTML =
-  document.getElementById("list").innerHTML + "<li>" + "Macbook - 1299.99 €" + "</li>";
+  document.getElementById("list").innerHTML + "<li>" + "Macbook Pro - 1299.00 €" + "</li>";
 
           // Gesamtsumme
-  document.getElementById("gesamtbetrag").innerHTML =
+  document.getElementById("zusammenrechnen").innerHTML =
               // gesamtbetrag + neues Produkt
-  Number(document.getElementById("gesamtbetrag").innerHTML)
+  Number(document.getElementById("zusammenrechnen").innerHTML)
   +
   Number(document.getElementById("macbookpreis").innerHTML);
 }
 
 function kopfhörerkaufen() {
+  document.getElementById("summe").innerHTML =
+  document.getElementById("summe").innerHTML + "<li>" + "Kopfhörer - 399.00 €" + "</li>";
   document.getElementById("list").innerHTML =
   document.getElementById("list").innerHTML + "<li>" + "Kopfhörer - 399.00 €" + "</li>";
-
-          // Gesamtsumme
-  document.getElementById("gesamtbetrag").innerHTML =
-              // gesamtbetrag + neues Produkt
-  Number(document.getElementById("gesamtbetrag").innerHTML)
+  document.getElementById("zusammenrechnen").innerHTML =
+  Number(document.getElementById("zusammenrechnen").innerHTML)
   +
   Number(document.getElementById("kopfhörerpreis").innerHTML);
 }
 
 function macairkaufen() {
+  document.getElementById("summe").innerHTML =
+  document.getElementById("summe").innerHTML + "<li>" + "Macbook Air Pro - 1399.00 €" + "</li>";
   document.getElementById("list").innerHTML =
-  document.getElementById("list").innerHTML + "<li>" + "Macbook Air - 1399.00 €" + "</li>";
-
-          // Gesamtsumme
-  document.getElementById("gesamtbetrag").innerHTML =
-              // gesamtbetrag + neues Produkt
-  Number(document.getElementById("gesamtbetrag").innerHTML)
+  document.getElementById("list").innerHTML + "<li>" + "Macbook Air Pro - 1399.00 €" + "</li>";   
+  document.getElementById("zusammenrechnen").innerHTML =
+  Number(document.getElementById("zusammenrechnen").innerHTML)
   +
   Number(document.getElementById("macairpreis").innerHTML);
 }
 
 function tabletkaufen() {
+  document.getElementById("summe").innerHTML =
+  document.getElementById("summe").innerHTML + "<li>" + "Sony Tablet - 499.00 €" + "</li>";
   document.getElementById("list").innerHTML =
   document.getElementById("list").innerHTML + "<li>" + "Sony Tablet - 499.00 €" + "</li>";
-
-          // Gesamtsumme
-  document.getElementById("gesamtbetrag").innerHTML =
-              // gesamtbetrag + neues Produkt
-  Number(document.getElementById("gesamtbetrag").innerHTML)
+  document.getElementById("zusammenrechnen").innerHTML =
+  Number(document.getElementById("zusammenrechnen").innerHTML)
   +
   Number(document.getElementById("tabletpreis").innerHTML);
 }
 
 function headsetkaufen() {
+  document.getElementById("summe").innerHTML =
+  document.getElementById("summe").innerHTML + "<li>" + "Sony Bluetooth Kopfhörer - 299.00 €" + "</li>";
   document.getElementById("list").innerHTML =
   document.getElementById("list").innerHTML + "<li>" + "Sony Bluetooth Kopfhörer - 299.00 €" + "</li>";
-
-          // Gesamtsumme
-  document.getElementById("gesamtbetrag").innerHTML =
-              // gesamtbetrag + neues Produkt
-  Number(document.getElementById("gesamtbetrag").innerHTML)
+  document.getElementById("zusammenrechnen").innerHTML =
+  Number(document.getElementById("zusammenrechnen").innerHTML)
   +
   Number(document.getElementById("headsetpreis").innerHTML);
 }
 
 function asuskaufen() {
+  document.getElementById("summe").innerHTML =
+  document.getElementById("summe").innerHTML + "<li>" + "Asus Gaming Laptop - 799.00 €" + "</li>";
   document.getElementById("list").innerHTML =
   document.getElementById("list").innerHTML + "<li>" + "Asus Gaming Laptop - 799.00 €" + "</li>";
-
-          // Gesamtsumme
-  document.getElementById("gesamtbetrag").innerHTML =
-              // gesamtbetrag + neues Produkt
-  Number(document.getElementById("gesamtbetrag").innerHTML)
+  document.getElementById("zusammenrechnen").innerHTML =
+  Number(document.getElementById("zusammenrechnen").innerHTML)
   +
   Number(document.getElementById("asuspreis").innerHTML);
 }
 
 function galaxykaufen() {
+  document.getElementById("summe").innerHTML =
+  document.getElementById("summe").innerHTML + "<li>" + "Samsung Galaxy - 399.00 €" + "</li>";
   document.getElementById("list").innerHTML =
-  document.getElementById("list").innerHTML + "<li>" + "Sony Tablet - 499.99 €" + "</li>";
-
-          // Gesamtsumme
-  document.getElementById("gesamtbetrag").innerHTML =
-              // gesamtbetrag + neues Produkt
-  Number(document.getElementById("gesamtbetrag").innerHTML)
+  document.getElementById("list").innerHTML + "<li>" + "Sony Tablet - 399.00 €" + "</li>";
+  document.getElementById("zusammenrechnen").innerHTML =
+  Number(document.getElementById("zusammenrechnen").innerHTML)
   +
   Number(document.getElementById("galaxypreis").innerHTML);
 }
 
-function laptopkaufen() {
+/*function laptopkaufen() {
+  document.getElementById("summe").innerHTML =
+  document.getElementById("summe").innerHTML + "<li>" + "Asus Laptop - 599.00 €" + "</li>";
   document.getElementById("list").innerHTML =
-  document.getElementById("list").innerHTML + "<li>" + "Sony Tablet - 499.99 €" + "</li>";
-
-          // Gesamtsumme
-  document.getElementById("gesamtbetrag").innerHTML =
-              // gesamtbetrag + neues Produkt
-  Number(document.getElementById("gesamtbetrag").innerHTML)
+  document.getElementById("list").innerHTML + "<li>" + "Aus Laptop - 599.00 €" + "</li>";
+  document.getElementById("zusammenrechnung").innerHTML =
+  Number(document.getElementById("zusammenrechnung").innerHTML)
+  +
+  Number(document.getElementById("laptoppreis").innerHTML);
+} */
+ 
+function laptopkaufen() {
+  document.getElementById("tabelle").innerHTML =
+  document.getElementById("tabelle").innerHTML + "<td> <li>" + "Asus Laptop - 599.00 €" + "</li> </td> <br>";
+  document.getElementById("zusammenrechnung").innerHTML =
+  Number(document.getElementById("zusammenrechnung").innerHTML)
   +
   Number(document.getElementById("laptoppreis").innerHTML);
 }
 
-function camkaufen() {
-  document.getElementById("list").innerHTML =
-  document.getElementById("list").innerHTML + "<li>" + "Sony Tablet - 499.99 €" + "</li>";
 
-          // Gesamtsumme
+/*function camkaufen() {
+  document.getElementById("summe").innerHTML =
+  document.getElementById("summe").innerHTML + "<li>" + "Rekam Digitalkamera - 299.00 €" + "</li>";
+  document.getElementById("list").innerHTML =
+  document.getElementById("list").innerHTML + "<li>" + "Rekam Digitalkamera - 299.00 €" + "</li>";
   document.getElementById("gesamtbetrag").innerHTML =
-              // gesamtbetrag + neues Produkt
   Number(document.getElementById("gesamtbetrag").innerHTML)
   +
-  Number(document.getElementById("campreis").innerHTML);
-}
+  Number(document.getElementById("campreis").innerHTML); 
+} */
+
+
+
+function camkaufen() {
+  document.getElementById("tabelle").innerHTML =
+  document.getElementById("tabelle").innerHTML + "<td> <li>" + "Rekam Digitalkamera - 299.00 €" + "</li> </td> <br>";
+  document.getElementById("zusammenrechnung").innerHTML =
+  Number(document.getElementById("zusammenrechnung").innerHTML)
+  +
+  Number(document.getElementById("campreis").innerHTML);}
