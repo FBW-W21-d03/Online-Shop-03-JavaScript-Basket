@@ -10,12 +10,13 @@
 <script src="https://kit.fontawesome.com/7ad11a1981.js" crossorigin="anonymous"></script>
 <!-- Css link -->
     <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
     <title>Online Shop</title>
 </head>
 <hr>
     <header>
       <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark px-4 ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark px-4 fixed-top">
             <div class="container-fluid">
                 <img src="logo.png" alt="logo">
               <a class="navbar-brand  text-light px-4 fs-4" href="#product">Product</a>
@@ -40,46 +41,48 @@
             </div>
           </nav>
           <div id="header-image">
-              <h1 class="shop-name">Easy shopping with<span> Electro Shop</span> </h1>
+              <h1 class="shop-name"><span> Electro Shop</span> </h1>
           </div>
     </header>
          <!-- PRODUCT ERSTE REIHE -->
     <main>
         <article>
             <section >
-              <div class="row row-cols-1 row-cols-md-3 g-4 my-3 mx-3  ">
+              <div class="row row-cols-1 row-cols-md-3 g-4 my-3 mx-3 ">
                 <div class="col">
-                  <div class="card h-100  border border-3">
+                  <div class="card h-100  ">
                     <img src="product01.png" class="card-img-top" alt="...">
                     <div class="card-body  text-center">
-                      <h5 class="card-title fw-bolder  fs-3"> ISUS Laptop</h5>
-                      <h5  id="preis1" class="card-title ">1140</h5>
-                      <p  id="geld-zeichnen1">€</p>
-                      <p class="card-text">HUAWEI MateBook D 15, Intel Core i3-10110U, 8GB RAm, 256GB SSD, 15.6 Inch....</p>
+                      <h5 class="card-title fw-bolder  fs-3">Macbook Pro </h5>
+                      <p class="card-text">Apple MacBook Pro 13,3" 2020 M1/16/512 GB Space Grau BTO  Display: 13,3 Zoll (33,78 cm) Retina Display mit 2.560 x 1.600 Pixeln Arbeitsspeicher: 16 GB RAM
+                        Speicher: 512 GB SSD Grafik: Apple M1 - 8 Core</p>
+                        <span id="preis1" class="card-title">1290</span>
+                        <span id="geld-zeichnen1">€</span> <br> 
                       <button onclick="kaufen1()" class="btn btn-info">Buy now</button>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100  border border-3">
+                  <div class="card h-100 bg-light">
                     <img src="product02.png" class="card-img-top" alt="...">
                     <div class="card-body  text-center">
-                      <h5 class="card-title  fw-bolder  fs-3">Headset</h5>
-                      <h5  id="preis2" class="card-title">230.99</h5>
-                      <p  id="geld-zeichnen2">€</p>
-                      <p class="card-text ">Logitech G733 DARK SPEED wireless gaming headset with headband, Lightsync RGB...</p>
+                      <h5 class="card-title  fw-bolder  fs-3">Bluetooth Kopfhörer</h5>
+                      <p class="card-text ">Sony Bluetooth kabellose Noise Cancelling-Kopfhörer mit EXTRA BASS (bis zu 30 Stunden Akkulaufzeit, Over-Ear-Design, Alexa und Google Assistant, Schwarz</p>
+                      <span  id="preis2" class="card-title">230.99</span>
+                      <span id="geld-zeichnen2">€</span><br>
                       <button  onclick="kaufen2()" class="btn btn-info">Buy now</button>
                     </div>                 
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100  border border-3">
+                  <div class="card h-100 ">
                     <img src="product03.png" class="card-img-top" alt="...">
                     <div class="card-body  text-center">
-                      <h5  class="card-title fw-bolder  fs-3">Mac laptop</h5>
-                      <h5  id="preis3" class="card-title">2849</h5>
-                      <p  id="geld-zeichnen3">€</p>
-                      <p class="card-text">Lenovo IdealPad flex 3 Chromebook 29.5 cm (11.6 Inches, 1366 * 768, HD;...</p>
+                      <h5  class="card-title fw-bolder  fs-3 ">Mac laptop</h5>
+                      <p class="card-text">2021 Apple MacBook Pro (16", Apple M1 Max Chip mit 10‑Core CPU und 32‑Core GPU, 32 GB RAM, 1 TB SSD) - Space Grau
+                        16 GB RAM Speicher: 512 GB SSD Grafik: Apple M1 - 8 Core</p>
+                      <span  id="preis3" class="card-title">2849</span>
+                      <span  id="geld-zeichnen3">€</span><br>
                       <button onclick="kaufen3()" class="btn btn-info">Buy now</button>
 
                     </div>
@@ -92,39 +95,40 @@
             <section id="product">
               <div class="row row-cols-1 row-cols-md-3 g-4 my-3 mx-3">
                 <div class="col">
-                  <div class="card h-100 border border-3">
+                  <div class="card h-100 ">
                     <img src="product04.png" class="card-img-top" alt="...">
                     <div class="card-body text-center">
                       <h5 class="card-title fw-bolder  fs-3">Sony Tablet</h5>
-                      <h5  id="preis4" class="card-title">555</h5>
-                      <p  id="geld-zeichnen4">€</p>
                       <p class="card-text">Sony TEB-15DSKP - Tablet - Android 6.0 (Marshmallow) - 8 GB eMMC - 39.6 cm (15.6") IPS (1920 x 1080) - SD-Steckplatz</p>
+                      <span  id="preis4" class="card-title">555</span>
+                      <span id="geld-zeichnen4">€</span><br>
                       <button onclick="kaufen4()" class="btn btn-info">Buy now</button>
 
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100 border border-3">
+                  <div class="card h-100 ">
                     <img src="product05.png" class="card-img-top" alt="...">
                     <div class="card-body text-center">
-                      <h5 class="card-title fw-bolder  fs-3">Sony Headset</h5>
-                      <h5   id="preis5" class="card-title">180.99</h5>
-                      <p  id="geld-zeichnen5">€</p>
-                      <p class="card-text">Steel Series ,Black-Silver..</p>
+                      <h5 class="card-title fw-bolder  fs-3">Sony Bluetooth Kopfhörer </h5>
+                      <p class="card-text">Sony Bluetooth kabellose Noise Cancelling-Kopfhörer mit EXTRA BASS (bis zu 30 Stunden Akkulaufzeit, Over-Ear-Design, Alexa und Google Assistant, Schwarz</p>
+                      <span   id="preis5" class="card-title">180.99</span>
+                      <span  id="geld-zeichnen5">€</span><br>
                       <button onclick="kaufen5()" class="btn btn-info">Buy now</button>
 
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100 border border-3">
+                  <div class="card h-100">
                     <img src="product06.png" class="card-img-top" alt="...">
                     <div class="card-body text-center">
-                      <h5 class="card-title fw-bolder  fs-3">MSI Laptop</h5>
-                      <h5 id="preis6" class="card-title">1220.99</h5>
-                      <p  id="geld-zeichnen6">€</p>
-                      <p class="card-text">MSI Plus GL76 11UEK_033 (17.3 Inch / 144Hz) Gaming Laptop (Intel COre i7-...</p>
+                      <h5 class="card-title fw-bolder  fs-3">Macbook Air Pro</h5>
+                      <p class="card-text"> 2021 Apple MacBook Pro (16", Apple M1 Max Chip mit 10‑Core CPU und 32‑Core GPU, 32 GB RAM, 1 TB SSD) - Space Grau
+                        16 GB RAM Speicher: 512 GB SSD Grafik: Apple M1 - 8 Core</p>
+                      <span id="preis6" class="card-title">1220.99</span>
+                      <span  id="geld-zeichnen6">€</span><br>
                       <button onclick="kaufen6()" class="btn btn-info">Buy now</button>
 
                     </div>
@@ -136,40 +140,41 @@
             <section>
               <div class="row row-cols-1 row-cols-md-3 g-4 my-3 mx-3">
                 <div class="col">
-                  <div class="card h-100 border border-3">
+                  <div class="card h-100 ">
                     <img src="product07.png" class="card-img-top" alt="...">
                     <div class="card-body  text-center">
-                      <h5 class="card-title fw-bolder  fs-3">Samsung Mobile</h5>
-                      <h5  id="preis7" class="card-title">610.99</h5>
-                      <p  id="geld-zeichnen7">€</p>
-                      <p class="card-text">Samsung Galaxy S7...</p>
+                      <h5 class="card-title fw-bolder  fs-3">Samsung Galaxy Edge S7 Silver</h5>
+                      <p class="card-text"> Samsung Galaxy S7 Edge G935F LTE Smartphone, 5,5 Zoll (14 cm), 4G, 32 GB, 12 MP Kamera, Android, Goldfarben ,MicroSD um bis zu 200 GB</p>
+                      <span  id="preis7" class="card-title">610.99</span>
+                      <span id="geld-zeichnen7">€</span><br>
                       <button onclick="kaufen7()" class="btn btn-info">Buy now</button>
 
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100 border border-3">
+                  <div class="card h-100 ">
                     <img src="product08.png" class="card-img-top" alt="...">
                     <div class="card-body  text-center">
                       <h5 class="card-title fw-bolder  fs-3">ASUS Laptop</h5>
-                      <h5  id="preis8" class="card-title">990.00</h5>
-                      <p  id="geld-zeichnen8">€</p>
                       <p class="card-text">ASUS Vivobook S17 (S712JA-BX284T), NoteBook mit 17,3 Zoll Display, Intel® Core™ i3 Prozessor, 8 GB RAM, 512 GB SSD, Intel® UHD Graphics, Transparent Silver
                         ASUS</p>
+                        <span  id="preis8" class="card-title">990.00</span>
+                      <span id="geld-zeichnen8">€</span><br>
                       <button onclick="kaufen8()" class="btn btn-info">Buy now</button>
 
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100 border border-3">
+                  <div class="card h-100 ">
                     <img src="product09.png" class="card-img-top" alt="...">
                     <div class="card-body text-center">
-                      <h5 class="card-title fw-bolder  fs-3">ReKam Camera</h5>
-                      <h5 id="preis9" class="card-title">960</h5>
-                      <p  id="geld-zeichnen9">€</p>
-                      <p class="card-text">ReKam ZV_E10| APS_C mirrorless Interchangeable..</p>
+                      <h5 class="card-title fw-bolder  fs-3">ReeKam Digital Camera</h5>
+                      <p class="card-text">Rekam ECOPOD Digitale Kamera Schwarz mit Stativ, Autofokus , manueller Fokus
+                        Phasen-AF mit 11 flächig angeordneten AF-Sensoren, CCD mit 10.2 MP, APS-C</p>
+                        <span id="preis9" class="card-title">960</span>
+                      <span id="geld-zeichnen9">€</span><br>
                       <button onclick="kaufen9()" class="btn btn-info">Buy now</button>
 
                     </div>
@@ -195,8 +200,8 @@
                   <div class="col-md-5">
                       <h5><i class="fa fa-road"></i> Electro GMBH</h5>
                       <div class="row">
-                          <div class="col-6">
-                              <ul class="list-unstyled">
+                          <div class="col-6 ">
+                              <ul class="list-unstyled ">
                                   <li><a href="">Product</a></li>
                                   <li><a href="">Benefits</a></li>
                                   <li><a href="">Partners</a></li>
@@ -212,8 +217,8 @@
                               </ul>
                           </div>
                       </div>
-                      <ul class="nav">
-                          <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+                      <ul class="nav ">
+                          <li class="nav-item "><a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
                           <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
                           <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
                           <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
@@ -222,14 +227,14 @@
                   </div>
                   <div class="col-md-5">
                       <form>
-                          <fieldset class="form-group my-3">
-                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                          <fieldset class="form-group my-3  ">
+                              <input type="email" class="form-control " id="exampleInputEmail1" placeholder="Enter email">
                           </fieldset>
                           <fieldset class="form-group">
                               <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
                           </fieldset>
                           <fieldset class="form-group text-xs-right">
-                              <button type="button" class="btn btn-secondary-outline btn-lg  btn btn-warning  my-3">Send</button>
+                              <button type="button" class="btn btn-secondary-outline btn-lg  btn btn-info my-3">Send</button>
                           </fieldset>
                       </form>
                   </div>
@@ -239,7 +244,6 @@
       </footer>
 
      
-      <script src="index.js"></script>
       <!-- credits: https://www.codeply.com/p/EJd6H4Ejyi -->
 
     <!-- JavaScript Bundle with Popper -->

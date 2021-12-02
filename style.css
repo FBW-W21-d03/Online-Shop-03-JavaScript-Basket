@@ -1,28 +1,19 @@
- body{
-     font-family: sans-serif;
-     background-color: rgba(241, 241, 241, 0.829);
- }
-
-#header-image{
-    height: 550px;
-    background-image: url(Header.jpg);
-    background-repeat: no-repeat;
+ 
+body{
+   background-color: rgb(38, 153, 247);
     background-size: cover;
-    background-position: bottom;
-    color: white;
-}
+    font-family: sans-serif;
+    
+} 
 
  .shop-name{
-    font-size: 70px;
+    font-size: 90px;
     padding-top:10rem;
     text-align: center;
-    font-family: fantasy;
-}
-.shop-name span{
-    color: yellow;
-}
-.btn-warning:hover{
-    background-color: orange;
+    font-weight:950;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:10px 5px 4px #2171bb;
 }
 
 .btn-info:hover{
@@ -30,9 +21,10 @@
 }
 
 .gesamtsumme{
-    color: rgb(21, 48, 134);
     font-size: 1.5rem;
     margin-top: 2rem;
+    font-weight: 600;
+    color: black;
 }
 
 .gesamt{
@@ -40,13 +32,21 @@
 }
 
 #list{
-    color:rgb(21, 48, 134);
+    color:black;
+    font-weight:600;
 }
 
 
 #contact{
     text-align: center;
     margin-top: 2rem;
+    font-weight:500;
+    color: black;
+   
+}
+
+#list-unstyled, a {
+    color: black;
 }
 .nav{
     font-size: 1.5rem;
@@ -59,3 +59,5 @@
     text-align:center ;
     margin: 2rem;
 }
+
+

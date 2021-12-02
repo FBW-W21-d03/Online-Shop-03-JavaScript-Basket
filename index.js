@@ -1,3 +1,5 @@
+
+
 let währung = false;
 
 function dollarInEuro(){
@@ -67,7 +69,7 @@ function dollarInEuro(){
 
     document.getElementById("list").innerHTML =
         (document.getElementById("list").innerHTML) + 
-        "<li> ISUS Laptop</li>"
+        "<li>Macbook Pro</li>"
       
 
 }
@@ -80,7 +82,7 @@ function dollarInEuro(){
 
   document.getElementById("list").innerHTML =
       (document.getElementById("list").innerHTML) + 
-      "<li>Headset</li>"
+      "<li>Bluetooth Kopfhörer</li>"
       
 }
 
@@ -116,7 +118,7 @@ function kaufen5() {
 
 document.getElementById("list").innerHTML =
     (document.getElementById("list").innerHTML) + 
-    "<li>Sonny Headset</li>"
+    "<li>Sonny Bluetooth Kopfhörer</li>"
     
 }
 function kaufen6() {
@@ -127,7 +129,7 @@ function kaufen6() {
 
 document.getElementById("list").innerHTML =
     (document.getElementById("list").innerHTML) + 
-    "<li>Msi Laptop</li>"
+    "<li>Macbook Air Pro</li>"
     
 }
 
@@ -139,7 +141,7 @@ function kaufen7() {
 
 document.getElementById("list").innerHTML =
     (document.getElementById("list").innerHTML) + 
-    "<li>Samsung Mobile</li>"
+    "<li>Samsung Galaxy Edge S7 Silver</li>"
     
 }
 
@@ -163,7 +165,7 @@ function kaufen9() {
 
 document.getElementById("list").innerHTML =
     (document.getElementById("list").innerHTML) + 
-    "<li>ReKam Camera</li>"
+    "<li>ReeKam Digital Camera</li>"
     
 }
 
