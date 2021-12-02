@@ -143,13 +143,22 @@ function myFunction(){
 
 function mac_kaufen() {
 
-    // TOTAL PRISE 
+    // TOTAL PRISE ABOVE
 
 
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar").innerHTML);
+
+    //TOTAL PRISE BOTTOM
+
+    
+    document.getElementById("total2").innerHTML = 
+    Number(document.getElementById("total2").innerHTML)
+    +
+    Number(document.getElementById("dollar").innerHTML);
+ 
 
     // LIST
 
@@ -160,13 +169,23 @@ function mac_kaufen() {
 
 function headphone_kaufen() {
 
-    // TOTAL PRISE 
+    // TOTAL PRISE ABOVE
 
 
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar1").innerHTML);
+
+
+    //TOTAL PRISE BOTTOM
+
+    
+    document.getElementById("total2").innerHTML = 
+    Number(document.getElementById("total2").innerHTML)
+    +
+    Number(document.getElementById("dollar1").innerHTML);
+ 
 
     // LIST
 
@@ -179,13 +198,23 @@ function headphone_kaufen() {
 
 function mackbook() {
 
-    // TOTAL PRISE 
+    // TOTAL PRISE ABOVE
 
 
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar2").innerHTML);
+
+
+    //TOTAL PRISE BOTTOM
+
+    
+    document.getElementById("total2").innerHTML = 
+    Number(document.getElementById("total2").innerHTML)
+    +
+    Number(document.getElementById("dollar2").innerHTML);
+ 
 
     // LIST
 
@@ -196,13 +225,23 @@ function mackbook() {
 
 function sonyTablet() {
 
-    // TOTAL PRISE 
+    // TOTAL PRISE ABOVE
 
 
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar3").innerHTML);
+
+
+    //TOTAL PRISE BOTTOM
+
+    
+    document.getElementById("total2").innerHTML = 
+    Number(document.getElementById("total2").innerHTML)
+    +
+    Number(document.getElementById("dollar3").innerHTML);
+ 
 
     // LIST
 
@@ -213,13 +252,25 @@ function sonyTablet() {
 
 function sonykabellose() {
 
-    // TOTAL PRISE 
+    // TOTAL PRISE ABOVE
 
 
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar4").innerHTML);
+
+    //TOTAL PRISE BOTTOM
+
+    
+    document.getElementById("total2").innerHTML = 
+    Number(document.getElementById("total2").innerHTML)
+    +
+    Number(document.getElementById("dollar4").innerHTML);
+ 
+
+
+
     // LIST
 
     document.getElementById("list").innerHTML = 
@@ -229,13 +280,22 @@ function sonykabellose() {
 
 function asusVivoBook() {
 
-    // TOTAL PRISE
+    // TOTAL PRISE ABOVE
 
 
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar5").innerHTML);
+
+    //TOTAL PRISE BOTTOM
+
+    
+    document.getElementById("total2").innerHTML = 
+    Number(document.getElementById("total2").innerHTML)
+    +
+    Number(document.getElementById("dollar5").innerHTML);
+ 
 
     // LIST 
 
@@ -246,13 +306,23 @@ function asusVivoBook() {
 
 function samsung() {
 
-    // TOTAL PRISE
+    // TOTAL PRISE ABOVE
 
 
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar6").innerHTML);
+
+
+    //TOTAL PRISE BOTTOM
+
+    
+    document.getElementById("total2").innerHTML = 
+    Number(document.getElementById("total2").innerHTML)
+    +
+    Number(document.getElementById("dollar6").innerHTML);
+ 
     
     // LIST
 
@@ -263,12 +333,22 @@ function samsung() {
 
 function asus() {
 
-    // TOTAL PRISE
+    // TOTAL PRISE ABOVE
 
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar7").innerHTML);
+
+
+    //TOTAL PRISE BOTTOM
+
+    
+    document.getElementById("total2").innerHTML = 
+    Number(document.getElementById("total2").innerHTML)
+    +
+    Number(document.getElementById("dollar7").innerHTML);
+ 
 
     //LIST
 
@@ -279,16 +359,29 @@ function asus() {
 
 function camera() {
 
-    //TOTAL PRISE
+    //TOTAL PRISE ABOVE
 
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar8").innerHTML);
 
+    //TOTAL PRISE BOTTOM
+
+    
+    document.getElementById("total2").innerHTML = 
+    Number(document.getElementById("total2").innerHTML)
+    +
+    Number(document.getElementById("dollar8").innerHTML);
+
+
     //LIST
+
 
     document.getElementById("list").innerHTML = 
     document.getElementById("list").innerHTML +
-    "<li> camera:399.00€</li>"
+    "<li>" + "camera:399.00€"+"</li>"
+
+
+   
 }
