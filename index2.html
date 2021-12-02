@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Müller Elektrofachmarkt</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="java.js"></script>
+    </head>
+    <body>
+        
+        <!-- Navigation-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html"target="_blank">Home</a>
+        </li>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sortiment
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="index2.html">Netbooks & Ultrabooks</a></li>
+            <li><a class="dropdown-item" href="index3.html">Smartphone</a></li>
+            <li><a class="dropdown-item" href="index4.html">Headphones</a></li>
+            
+          </ul>
+        </li>
+        <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Einkaufswagen
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                       
+        </form>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      </form>
+        <button type="button" class="btn btn-dark" id="wechselBtn" onclick="wechsel()">
+            In $ anzeigen!
+        </button>      
+    </div>
+  </div>
+</nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Willkommen bei Müllers Fachmarkt für Elektronik </h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Starke Marken zu kleinen Preisen</p>
+                </div>
+            </div>
+            <img src="logo.png" alt="logo">
+        </header>
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="product01.png" alt="Netbook" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Samsung Galaxy Book Flex 39,62 cm (15,6 Zoll) Notebook (Intel Core i7-1065G7, 8 GB RAM, 256 GB SSD, S Pen, Windows 10 Home) royal blue </h5>
+                                    <!-- Product price-->
+                                    <span id="preis1" class="card-text text-danger">2249</span>
+                                    <span id="waehrung1">€</span>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                           
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <button onclick="kaufen1()" class="btn btn-info">Warenkorb</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="product03.png" alt="Netbook" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Acer Chromebook 14 Zoll (CB314-1H-C7PS) (ChromeOS, Laptop, FHD Display, Akkulaufzeit: Bis zu 12,5 Stunden, 4 GB LPDDR4 RAM / 64 GB eMMC, 1,5 Kg leicht, 19,7 mm dünn) </h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span id="preis2" class="card-text text-danger">1759</span>
+                                    <span id="waehrung2">€</span>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <button  onclick="kaufen2()" class="btn btn-info">Warenkorb</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                             <!-- Product image-->
+                            <img class="card-img-top" src="product06.png" alt="Netbook" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">MSI GP76 Leopard 10UE-022 17.3 Zoll FHD (1920*1080 Pixel /144 Hz) Gaming Notebook (Intel Core Comet Lake i7-10870H+HM470), NVIDIA GeForce RTX 3060 6 GB, 16 GB DDR4-3200 1 TB, Windows 10 Home </h5>
+                                    <!-- Product price-->
+                                    <span id="preis3" class="card-text text-danger">1900</span>
+                                    <span id="waehrung3">€</span> 
+                                    
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <button  onclick="kaufen3()" class="btn btn-info">Warenkorb</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="product08.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">ASUS VivoBook 14 E410MA-EK724TS inkl. Microsoft 365 Single Laptop 35,5cm (14 Zoll, FHD, 1920x1080) Notebook (Intel Celeron N4020, 4GB RAM, 128GB eMMC, shared Grafik, Win10S) Peacock Blue </h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                     <span id="preis4" class="card-text text-danger">399</span>
+                                     <span id="waehrung4">€</span> 
+                                   
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <button  onclick="kaufen4()" class="btn btn-info">Warenkorb</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   <ul id="list">
+            <span class="gesamtsumme  gesamt">Gesamtsumme:</span>
+            <span  class="gesamtsumme" id="gesamtbetrag">0</span>
+            <span class="gesamtsumme">€</span>
+             </ul>
+        </section>
+        
+        <!-- Footer-->
+        <footer >
+            <div class="container"><p class="m-0 text-center text-white"> Müller Elektrofachmarkt</p></div>
+        </footer>
+        
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+    </body>
+</html>
