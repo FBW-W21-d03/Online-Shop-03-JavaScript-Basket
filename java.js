@@ -240,7 +240,7 @@ function nootbook(){
     document.getElementById("list2").innerHTML =  
     document.getElementById("list2").innerHTML
      + 
-     "<td>" + "ASUS Vivobook S17" + "</td>" + "<td>" + "499.00 €" + "</td>";
+     "<tr><td>ASUS Vivobook S17</td><td>499.00 €</td></tr>";
 
     document.getElementById("summe2").innerHTML = 
     Number(document.getElementById("summe2").innerHTML)
@@ -254,7 +254,7 @@ function headphon(){
     document.getElementById("list2").innerHTML =  
     document.getElementById("list2").innerHTML
      + 
-     "<td>" + "SENNHEISER HD 450BT Over-ear" + "</td>" + "<td>" + "299.00 €" + "</td>";
+     "<tr><td>SENNHEISER HD 450BT Over-ear</td><td>299.00 €</td></tr>";
 
     document.getElementById("summe2").innerHTML = 
     Number(document.getElementById("summe2").innerHTML)
@@ -269,7 +269,7 @@ function nootbook1(){
     document.getElementById("list2").innerHTML =  
     document.getElementById("list2").innerHTML
      + 
-     "<td>" + "SAMSUNG GALAXY BOOK PRO 360 EVO" + "</td>" + "<td>" + "289.00 €" + "</td>";
+     "<tr><td>SAMSUNG GALAXY BOOK PRO 360 EVO</td><td>289.00 €</td></tr>";
 
     document.getElementById("summe2").innerHTML = 
     Number(document.getElementById("summe2").innerHTML)
@@ -284,7 +284,7 @@ function ipad1(){
     document.getElementById("list2").innerHTML =  
     document.getElementById("list2").innerHTML
      + 
-     "<td>" + "Sony TEB-15DSKP Tablet" + "</td>" + "<td>" + "173.00 €" + "</td>";
+     "<tr><td>Sony TEB-15DSKP Tablet</td><td>173.00 €</td></tr>";
 
     document.getElementById("summe2").innerHTML = 
     Number(document.getElementById("summe2").innerHTML)
@@ -298,7 +298,7 @@ function headphone1(){
     document.getElementById("list2").innerHTML =  
     document.getElementById("list2").innerHTML
      + 
-     "<td>" + "SONY WH-1000XM3 Noise Cancelling" + "</td>" + "<td>" + "530.00 €" + "</td>";
+     "<tr><td>SONY WH-1000XM3 Noise Cancelling</td><td>530.00 €</td></tr>";
 
     document.getElementById("summe2").innerHTML = 
     Number(document.getElementById("summe2").innerHTML)
@@ -312,7 +312,7 @@ function nootbook2(){
     document.getElementById("list2").innerHTML =  
     document.getElementById("list2").innerHTML
      + 
-     "<td>" + "MSI KATANA (GF76) Gaming Notebook" + "</td>" + "<td>" + "999.00 €" + "</td>";
+     "<tr><td>MSI KATANA (GF76) Gaming Notebook</td><td>999.00 €</td></tr>";
 
     document.getElementById("summe2").innerHTML = 
     Number(document.getElementById("summe2").innerHTML)
@@ -326,7 +326,7 @@ function phone(){
     document.getElementById("list2").innerHTML =  
     document.getElementById("list2").innerHTML
      + 
-     "<td>" + "SAMSUNG Galaxy S7 32 GB Black-Onyx" + "</td>" + "<td>" + "329.00 €" + "</td>";
+     "<tr><td>SAMSUNG Galaxy S7 32 GB Black-Onyx</td><td>329.00 €</td></tr>";
 
     document.getElementById("summe2").innerHTML = 
     Number(document.getElementById("summe2").innerHTML)
@@ -340,7 +340,7 @@ function nootbook3(){
     document.getElementById("list2").innerHTML =  
     document.getElementById("list2").innerHTML
      + 
-     "<td>" + "ASUS ROG Strix G17 (G713QM-HX019T)" + "</td>" + "<td>" + "890.00 €" + "</td>";
+     "<tr><td>ASUS ROG Strix G17 (G713QM-HX019T)</td><td>890.00 €</td></tr>";
 
     document.getElementById("summe2").innerHTML = 
     Number(document.getElementById("summe2").innerHTML)
