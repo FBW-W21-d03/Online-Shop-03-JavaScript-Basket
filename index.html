@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+    <title>My online shop</title>
+
+    <script
+    src="https://kit.fontawesome.com/3caa6fe8c5.js"
+    crossorigin="anonymous"
+  ></script>
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./logo.png" alt="logo">  
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">your bag</a>
+                </li>
+          
+                <li class="nav-item dropdown"></li>
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Filter
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">price</a></li>
+                    <li><a class="dropdown-item" href="#">Marks</a></li>
+                    
+                    <li><a class="dropdown-item" href="#">Model</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="" placeholder=""  aria-label="">
+                <button class="btn btn-outline-success" type="submit">search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <button onclick="switchCurrency()" id="btn-currency">
+          Preise in Dollar anzeigen
+        </button>
+        <button onclick="Laptop()" id="list">
+          your bag
+        </button>
+
+ 
+
+    </header>
+    <main>
+            <div class="container">
+              <div class="card-group">
+                <div class="card">
+                <img src="./product01.png" class="card-img-top" alt="product01">
+                <div class="card-body">
+                <h5 class="card-title">Laptop</h5>
+                <p class="card-text">Erziele in jedem Spiel maximale Leistung mit den neuen Intel-Core Prozessoren der 11.</p>
+                <div class="card-body">
+                <div class="card-footer">
+                <p class="price">2249,00 €</p>
+                <button><i class="fas fa-shopping-cart"></i> Buy</button>
+                </div>
+                </div>
+                </div>
+               </div>
+            <div class="card">
+              <img src="./product02.png" class="card-img-top" alt="product02">
+              <div class="card-body">
+                <h5 class="card-title">Headset</h5>
+                <p class="card-text">This card </p>
+                <div class="card-footer">
+                  <p class="price">55,00 €</p>
+                  <button><i class="fas fa-shopping-cart-1"></i> Buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./product03.png" class="card-img-top" alt="product03">
+              <div class="card-body">
+                <h5 class="card-title">Laptop</h5>
+                <p class="card-text">Erziele in jedem</p>
+                <div class="card-footer">
+                  <p class="price">1999,00 €</p>
+                  <button><i class="fas fa-shopping-cart"></i> Buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-group">
+              <div class="card">
+                <img src="./product04.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tablet</h5>
+                  <p class="card-text">This is a wider card with supporting.</p>
+                  <div class="card-footer">
+                    <p class="price">499,00 €</p>
+                    <button><i class="fas fa-shopping-cart"></i> Buy</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./product05.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Headset</h5>
+                  <p class="card-text">This card </p>
+                  <div class="card-footer">
+                    <p class="price">199,00 €</p>
+                    <button><i class="fas fa-shopping-cart"></i> Buy</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./product06.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <p class="card-text">Erziele in jedem Spiel </p>
+                  <div class="card-footer">
+                    <p class="price">835,00 €</p>
+                    <button><i class="fas fa-shopping-cart"></i> Buy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="card-group">
+            <div class="card">
+              <img src="./product07.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Smart-Phone</h5>
+                <p class="card-text">This is a wider card </p>
+                <div class="card-footer">
+                  <p class="price">1699,00 €</p>
+                  <button><i class="fas fa-shopping-cart"></i> Buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./product08.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Laptop</h5>
+                <p class="card-text">This is</p>
+                <div class="card-footer">
+                  <p class="price">949,00 €</p>
+                  <button><i class="fas fa-shopping-cart"></i> Buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./product09.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">camera</h5>
+                <p class="card-text">This is a wider card.</p>
+                <div class="card-footer">
+                  <p class="price">499,00 €</p>
+                  <button><i class="fas fa-shopping-cart"></i> Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+          <!-- the last div-->
+
+          </div>
+    </main>
+    <footer>
+      <div class="dhl">
+      <p>our Partner<br>
+        <img src="./DHL.jpg"  class="card-img-top" alt="dhl">
+        </p>
+      </div>
+      <p>Copyright& copy; ElectroShop 2021</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+body{
+    background-color: brown;
+}
+header{
+    background-color: black;
+}
+.card{
+    border: black;
+    border-width: 50em;
+    
+}
+.dhl{
+    width: 100px;
+}
+.dhl{
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+}
+
+
+
+
+main button {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    background-color:black;
+    font-size: 1.125rem;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:white;
+  }
+  
+  main button:hover {
+    background-color:rgb(139, 60, 60);
+  }
+  
+  main .fa-shopping-cart {
+    color:red;
+  }
+  
+
+
+
+footer {
+    background-color:brown;
+    color: rgba(0, 0, 0, 0.67);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
