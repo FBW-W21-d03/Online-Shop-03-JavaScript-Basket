@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Warenkorb</h2>
+    <ul id="list"></ul>
+    <span>Gesamtsumme:</span>
+    <span id="gesamtbetrag">0</span>
+    <span>€</span>
+
+    <script>
+        /*
+        TODO: Zeige eine List mit gekauften Produkten
+        */
+        function kaufen() {
+            document.getElementById("list").innerHTML =
+                document.getElementById("list").innerHTML + "<li>" + "Notebook - 350 €" + "</li>";
+
+            // Gesamtsumme
+            document.getElementById("gesamtbetrag").innerHTML =
+                // gesamtbetrag + neues Produkt
+                Number(document.getElementById("gesamtbetrag").innerHTML)
+                +
+                Number(document.getElementById("preis").innerHTML);
+        }
+    </script>
+</body>
+</body>
+</html>
