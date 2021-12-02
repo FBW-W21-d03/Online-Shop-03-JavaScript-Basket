@@ -142,64 +142,153 @@ function myFunction(){
 }
 
 function mac_kaufen() {
+
+    // TOTAL PRISE 
+
+
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar").innerHTML);
+
+    // LIST
+
+    document.getElementById("list").innerHTML = 
+    document.getElementById("list").innerHTML +
+    "<li> Mac notebook :1399.00€</li>"
 }
 
 function headphone_kaufen() {
+
+    // TOTAL PRISE 
+
+
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar1").innerHTML);
+
+    // LIST
+
+    document.getElementById("list").innerHTML = 
+    document.getElementById("list").innerHTML +
+    "<li> Sony MDR-7506:399.00€</li>"
+
+    
 }
 
 function mackbook() {
+
+    // TOTAL PRISE 
+
+
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar2").innerHTML);
+
+    // LIST
+
+    document.getElementById("list").innerHTML = 
+    document.getElementById("list").innerHTML +
+    "<li> Mac notebook pro:1399.00€</li>"
 }
 
 function sonyTablet() {
+
+    // TOTAL PRISE 
+
+
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar3").innerHTML);
+
+    // LIST
+
+    document.getElementById("list").innerHTML = 
+    document.getElementById("list").innerHTML +
+    "<li> Sony Xperia Z4 Tablet-PC LTE:499.00€</li>"
 }
 
 function sonykabellose() {
+
+    // TOTAL PRISE 
+
+
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar4").innerHTML);
+    // LIST
+
+    document.getElementById("list").innerHTML = 
+    document.getElementById("list").innerHTML +
+    "<li> Sony WH-XB910N kabellose:299.00€</li>"
 }
 
 function asusVivoBook() {
+
+    // TOTAL PRISE
+
+
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar5").innerHTML);
+
+    // LIST 
+
+    document.getElementById("list").innerHTML = 
+    document.getElementById("list").innerHTML +
+    "<li> ASUS VivoBook:399.00€</li>"
 }
 
 function samsung() {
+
+    // TOTAL PRISE
+
+
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar6").innerHTML);
+    
+    // LIST
+
+    document.getElementById("list").innerHTML = 
+    document.getElementById("list").innerHTML +
+    "<li> Samsung S7 Gold :350.00€</li>"
 }
 
 function asus() {
+
+    // TOTAL PRISE
+
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar7").innerHTML);
+
+    //LIST
+
+    document.getElementById("list").innerHTML = 
+    document.getElementById("list").innerHTML +
+    "<li> ASUS VivoBook S15:899.00€</li>"
 }
 
 function camera() {
+
+    //TOTAL PRISE
+
     document.getElementById("total").innerHTML = 
     Number(document.getElementById("total").innerHTML)
     +
     Number(document.getElementById("dollar8").innerHTML);
+
+    //LIST
+
+    document.getElementById("list").innerHTML = 
+    document.getElementById("list").innerHTML +
+    "<li> camera:399.00€</li>"
 }
