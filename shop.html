@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script defer src="main.js"></script>
+    <title>Elektro Shop</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <img src="./img/logo.png" alt="" srcset="">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Schop</a></li>
+                <button id="werung" onclick="werung()">€ or $</button>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Shoping Card -->
+        <section class="shoping-card">
+
+            
+        
+            <div class="waren-korb">
+        
+                <span>Warenkorb : <i class="fas fa-shopping-cart"></i></span>
+
+                <ul id="liste">
+                </ul>
+        
+                <span>Gesamtsumme:</span>
+                <span id="sum">0</span><span class="wert1">€</span><span> <i class="fas fa-shopping-bag"></i></span>
+
+        
+            </div>
+        
+        </section>
+
+        <section class="products">
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="#">
+                        <img src="img/product01.png" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div id="mac1" class="desc">Mac Pro</div>
+                    <p class="beschreibung">Mac Pro Display: 16 Zoll (40,65 cm) Retina Display mit 3072 x 1920 Pixeln
+                        Prozessor: 2,4 GHz Okta-Core Intel Core i9 Prozessor
+                        Arbeitsspeicher: 32 GB DDR 4 - 2666 RAM
+                        Speicher: 2 TB SSD, Tastatur: mit Touchbar und Touch ID
+                        Grafik: Radeon Pro 5600M mit 8 GB HBM2 Grafikspeicher
+                        Artikelnummer: 1A07-0P0</p>
+                    <span id="price1">1450</span><span id="wert1">€</span>
+                    <button class="btn" onclick="mac1()">By Now</button>
+                    
+                </div>
+            </div>
+
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="#">
+                        <img src="img/product02.png" alt="Forest" width="600" height="400">
+                    </a>
+                    <div class="desc">Kopfhörer</div>
+                    <p class="beschreibung">
+                        Typ: Kabelloser Over-Ear-Kopfhörer; geschlossen
+                        Übertragung: Bluetooth, Noise Cancelling, High-Res Audiowiedergabe
+                        Einsatzgebiet: Street; Adaptives Noise-Cancelling
+                        Farbe: Schwarz
+                        Harman Kardon Headphones-App <br><br>
+                        Artikelnummer: B619-1AU
+                    </p>
+                    <span id="price2">50</span><span id="wert2">€</span>
+                    <button class="btn" onclick="kopfhörer2()">By Now</button>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="#">
+                        <img src="img/product03.png" alt="Northern Lights" width="600" height="400">
+                    </a>
+                    <div class="desc">Mac Pro 2</div>
+                    <p class="beschreibung">Mac Pro Display: 16 Zoll (40,65 cm) Retina Display mit 3072 x 1920 Pixeln
+                        Prozessor: 2,4 GHz Okta-Core Intel Core i9 Prozessor
+                        Arbeitsspeicher: 32 GB DDR 4 - 2666 RAM
+                        Speicher: 2 TB SSD, Tastatur: mit Touchbar und Touch ID
+                        Grafik: Radeon Pro 5600M mit 8 GB HBM2 Grafikspeicher
+                        Artikelnummer: 1A07-0P0
+                    </p>
+                    <span id="price3">1450</span><span id="wert3">€</span>
+                    <button class="btn" onclick="mac3()">By Now</button>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="#">
+                        <img src="img/product04.png" alt="Mountains" width="600" height="400">
+                    </a>
+                    <div class="desc">Tablet Samsung</div>
+                    <p class="beschreibung">
+                        Typ: Kabelloser Over-Ear-Kopfhörer; geschlossen
+                        Übertragung: Bluetooth, Noise Cancelling, High-Res Audiowiedergabe
+                        Einsatzgebiet: Street; Adaptives Noise-Cancelling
+                        Farbe: Schwarz
+                        Harman Kardon Headphones-App <br><br>
+                        Artikelnummer: B619-1AU
+                    </p>
+                    <span id="price4">650</span><span id="wert4">€</span>
+                    <button class="btn" onclick="tablet4()">By Now</button>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="#">
+                        <img src="img/product05.png" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="desc">Kopfhörer</div>
+                    <p class="beschreibung">
+                        Typ: Kabelloser Over-Ear-Kopfhörer; geschlossen
+                        Übertragung: Bluetooth, Noise Cancelling, High-Res Audiowiedergabe
+                        Einsatzgebiet: Street; Adaptives Noise-Cancelling
+                        Farbe: Schwarz
+                        Harman Kardon Headphones-App <br><br>
+                        Artikelnummer: B619-1AU
+                    </p>
+                    <span id="price5">123</span><span id="wert5">€</span>
+                    <button class="btn" onclick="kopfhörer5()">By Now</button>
+                </div>
+            </div>
+
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="#">
+                        <img src="img/product06.png" alt="Forest" width="600" height="400">
+                    </a>
+                    <div class="desc">msi</div>
+                    <p class="beschreibung">Intel® Core™ i5-10200H Prozessor (bis zu 4,1 GHz), Quad-Core 43,9 cm (17,3")
+                        Full HD 144Hz 16:9 Display (entspiegelt), Webcam 16 GB RAM , 512 GB SSD GeForce GTX 1660Ti
+                        Grafik (4096 MB), HDMI, miniDisplayport, WLAN-ax Windows 10 Home 64 Bit, Akkulaufzeit bis 6 h,
+                        2,5 kg Artikelnummer: 1C17-253
+                    </p>
+                    <span id="price6">2050</span><span id="wert6">€</span>
+                    <button class="btn" onclick="msi6()">By Now</button>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="https://www.apple.com/shop/buy-mac">
+                        <img src="img/product07.png" alt="Northern Lights" width="600" height="400">
+                    </a>
+                    <div class="desc">Samsung S20</div>
+                    <p class="beschreibung">
+                        Farbe: blau 2,8 GHz Qualcomm Snapdragon 865 Octa-Core-Prozessor 12,0 Megapixel Hauptkamera
+                        16,4 cm (6,5 Zoll) Super AMOLED Display mit 1080 x 2400 Pixel 128 GB interner Speicher,
+                        Wassergeschützt, Android 11.0 <br><br>
+                        Artikelnummer: A409-1TF
+                    </p>
+                    <span id="price7">560</span><span id="wert7">€</span>
+                    <button class="btn" onclick="samsung7()">By Now</button>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="#">
+                        <img src="img/product08.png" alt="Mountains" width="600" height="400">
+                    </a>
+                    <div class="desc">ASUS</div>
+                    <p class="beschreibung">Das 17.3" (scharfe 1600x900 WXGA++ Auflösung) Intel Core i3 1115G4 4 Thread
+                        Prozessor mit 4.10 GHz ausgestattet, 8GB DDR4 Ram, HD+ Display, eine große 512GB SSD
+                        Besonderheiten: USB-C, nur 2.2 kg, 8 GB DDR4, HD Webcam, HDMI,
+                        Kopfhöreranschluss, Mikrofon, Bluetooth, USB 3.0
+                        Windows 11 Prof, 64-Bit.
+                    </p>
+                    <span id="price3">1145</span><span id="wert8">€</span>
+                    <button class="btn" onclick="asus8()">By Now</button>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="#">
+                        <img src="img/product09.png" alt="Mountains" width="600" height="400">
+                    </a>
+                    <div class="desc">Sony Camera</div>
+                    <p class="beschreibung">
+                        Alpha ZV-E10 - APS-C Mirrorless Interchangeable Lens Vlog Camera
+
+                        Vlog style camera, 24MP, 4K 30p, live-streaming via USB, flip-out vari-angle LCD
+                    </p>
+                    <span id="price9">328</span><span id="wert9">€</span>
+                    <button class="btn" onclick="sony9()">By Now</button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>Copyright &copy; 2021 Electro Shop GmbH</footer>
+
+</body>
+
+</html>

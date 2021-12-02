@@ -1,0 +1,388 @@
+body {
+  background-image: url("./img/andras-vas-Bd7gNnWJBkU-unsplash.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  height: 100vh;
+  /* End Contact CSS*/
+}
+
+body header {
+  width: 95vw;
+  margin: auto;
+  border-radius: 1em;
+  text-align: center;
+  background-color: #222;
+}
+
+body header nav img {
+  text-align: center;
+}
+
+body header nav ul {
+  width: 70vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body header nav ul li {
+  padding: 0.5em;
+  margin: 0.5em;
+  list-style: none;
+  color: white;
+  font-size: 1.25em;
+}
+
+body header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+body header nav ul #werung {
+  font-size: 1.3rem;
+  padding: 0.5em;
+  color: white;
+  border: dashed white 0.15em;
+  background-color: #7fac26;
+  border-radius: 6em;
+  margin-bottom: 0.5em;
+}
+
+body header nav ul #werung a {
+  color: white;
+  text-decoration: none;
+}
+
+body main {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  /* Product CSS */
+  /* End Product CSS*/
+  /* Contactform CSS*/
+}
+
+body main section {
+  /* Slideshow container */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Caption text */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+  /* On smaller screens, decrease text size */
+}
+
+body main section div div a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+body main section div div .produkt-name1 {
+  color: #000;
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 0.4em;
+  background-color: #7fac26;
+  font-size: 26px;
+}
+
+body main section div div .produkt-name2 {
+  color: #000;
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 0.4em;
+  background-color: #7fac26;
+  font-size: 26px;
+}
+
+body main section div div .produkt-name3 {
+  color: #000;
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  background-color: #7fac26;
+  font-size: 26px;
+}
+
+body main section h1 {
+  color: white;
+}
+
+body main section * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body main section body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+body main section .mySlides {
+  display: none;
+}
+
+body main section img {
+  vertical-align: middle;
+}
+
+body main section .slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+body main section .prev,
+body main section .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body main section .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+body main section .prev:hover,
+body main section .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+body main section .text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+body main section .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+body main section .active,
+body main section .dot:hover {
+  background-color: #717171;
+}
+
+body main section .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  body main section .prev,
+  body main section .next,
+  body main section .text {
+    font-size: 11px;
+  }
+}
+
+body main .desc {
+  color: white;
+  font-size: 24px;
+}
+
+body main div .gallery {
+  border: 1px solid #cccccc;
+  border-radius: 0.5em;
+  background-color: #b1b1b186;
+}
+
+body main div .gallery img {
+  width: 100%;
+  height: auto;
+}
+
+body main div .gallery span {
+  margin-left: 2rem;
+  color: #e7e7e7;
+  font-weight: 700;
+  text-shadow: blue 2px -2px;
+}
+
+body main div .gallery #wert1, body main div .gallery #wert2, body main div .gallery #wert3, body main div .gallery #wert4,
+body main div .gallery #wert5, body main div .gallery #wert6, body main div .gallery #wert7, body main div .gallery #wert8,
+body main div .gallery #wert9 {
+  margin: 0.5em;
+}
+
+body main div .gallery:hover {
+  border: 1px solid #777;
+}
+
+body main div .beschreibung {
+  padding: 2em;
+  color: white;
+}
+
+body main div .btn {
+  width: 90%;
+  margin: 0.5em;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 800;
+  background-color: yellowgreen;
+}
+
+body main div.desc {
+  margin-bottom: -30px;
+  padding: 5px;
+  text-align: center;
+}
+
+body main .responsive {
+  padding: 0 6px;
+  float: left;
+  width: 23.99999%;
+  margin: 0.5em 0.5%;
+}
+
+@media only screen and (max-width: 700px) {
+  body main .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body main .responsive {
+    width: 100%;
+  }
+}
+
+body main .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body main .shoping-card {
+  width: 70vw;
+  margin: auto;
+  padding: 1rem 3rem;
+  background-color: #999;
+  opacity: 0.8;
+  border-radius: 0.5em;
+}
+
+body main .shoping-card table td,
+body main .shoping-card table th {
+  border: 2px solid white;
+  padding: 0.6em;
+  text-align: center;
+}
+
+body main .shoping-card table {
+  color: white;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+body main form {
+  margin: 1em;
+}
+
+body main form fieldset {
+  margin: 1em;
+  text-align: center;
+  background-color: rgba(155, 155, 155, 0.4);
+}
+
+body main form fieldset input {
+  width: 50vw;
+  padding: 0.5em;
+}
+
+body main form fieldset label {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+body main form fieldset textarea {
+  display: block;
+  width: 50vw;
+  margin: auto;
+}
+
+body main form fieldset h1 {
+  font-size: 45px;
+  text-align: center;
+  color: white;
+}
+
+body main form fieldset .contact-us {
+  padding: 0.5em;
+  background-color: yellowgreen;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+body footer {
+  width: 15vw;
+  padding: 0.1em;
+  margin: auto;
+  color: white;
+  background-color: #222;
+  border-radius: 1em;
+  height: 30px;
+  margin-top: 50px;
+}
+/*# sourceMappingURL=style.css.map */

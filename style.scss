@@ -1,0 +1,409 @@
+
+body {
+    background-image: url("./img/andras-vas-Bd7gNnWJBkU-unsplash.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    height: 100vh;     
+
+    header {
+        width: 95vw;
+        margin: auto;
+        border-radius: 1em;
+        text-align: center;
+        background-color: #222;
+
+        nav {
+            
+            img {
+                text-align: center;
+            }
+
+            ul {
+                width: 70vw;
+                margin: auto;
+                display: flex;
+                justify-content: space-evenly;
+
+
+                li {
+                    padding: 0.5em;
+                    margin: 0.5em;
+                    list-style: none;
+                    color: white;
+                    font-size: 1.25em;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+
+                #werung {
+                    font-size: 1.3rem;
+                    padding: 0.5em;
+                    color: white;
+                    border: dashed white 0.15em;
+                    background-color: #7fac26;
+                    border-radius: 6em;
+                    margin-bottom: 0.5em;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                }
+
+            }
+
+            }
+            
+    }
+
+    main {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr; // mobile first
+        gap: 1rem;
+        padding: 1rem;
+    // Section 1
+    section {
+
+        div {
+            div {
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 700;
+                }
+
+                .produkt-name1 {
+                    color: #000;
+                    text-align: center;
+                    padding: 0.5em;
+                    border-radius: 0.4em;
+                    background-color: #7fac26;
+                    font-size: 26px;
+
+                }
+
+                .produkt-name2 {
+                    color: #000;
+                    text-align: center;
+                    padding: 0.5em;
+                    border-radius: 0.4em;
+                    background-color: #7fac26;
+                    font-size: 26px;
+                }
+
+                .produkt-name3 {
+                    color: #000;
+                    text-align: center;
+                    padding: 0.5em;
+                    border-radius: 0.5em;
+                    background-color: #7fac26;
+                    font-size: 26px;
+                }
+            }
+        }
+
+
+        h1 {
+            color: white;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 25px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }    
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    }
+
+    /* Product CSS */
+    
+    .desc {
+        color: white;
+        font-size: 24px;
+    }
+
+    div {
+        .gallery {
+            border: 1px solid hsl(0, 0%, 80%);
+            border-radius: 0.5em;
+            background-color: #b1b1b186;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+            
+            span {
+                margin-left: 2rem;
+                color: #e7e7e7;
+                font-weight: 700;
+                text-shadow: blue 2px -2px;
+            }
+
+            #wert1, #wert2, #wert3, #wert4,
+            #wert5, #wert6, #wert7, #wert8,
+            #wert9 {
+                margin: 0.5em;
+            }
+
+        }
+
+        .gallery:hover {
+            border: 1px solid #777;
+        }
+
+        .beschreibung {
+            padding: 2em;
+            color: white;
+        }
+
+        .btn {
+            width: 90%;
+            margin: 0.5em;
+            color: white;
+            font-size: 1.5em;
+            font-weight: 800;
+            background-color: yellowgreen;
+        }
+
+    }
+
+    div.desc {
+        margin-bottom: -30px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 23.99999%;
+        margin: 0.5em 0.5%;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .responsive {
+            width: 100%;
+        }
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* End Product CSS*/
+
+    // Section 2 CSS
+    .shoping-card {
+        width: 70vw;
+        margin: auto;
+        padding: 1rem 3rem;
+        background-color: #999;
+        opacity: 0.8;
+        border-radius: 0.5em;
+
+        table {
+            td,
+            th {
+                border: 2px solid white;
+                padding: 0.6em;
+                text-align: center;
+            }
+
+        }
+        
+
+        table {
+            color: white;
+            width: 100%;
+            border-collapse: collapse;
+        }
+    }
+
+    /* Contactform CSS*/
+
+        form {
+            margin: 1em;
+            fieldset {
+                margin: 1em;
+                text-align: center;
+                background-color: rgba(155, 155, 155, 0.4);
+                
+                input {
+                    width: 50vw;
+                    padding: 0.5em;
+                }
+                label {
+                    color: white;
+                    font-weight: 700;
+                    font-size: 24px;
+                }
+                textarea {
+                    display: block;
+                    width: 50vw;
+                    margin: auto;
+                }
+
+                h1 {
+                    font-size: 45px;
+                    text-align: center;
+                    color: white;
+                }
+
+                .contact-us {
+                       padding: 0.5em;
+                       background-color: yellowgreen;
+                       border-radius: 0.5em;
+                       text-align: center;
+                }
+            }
+        }
+
+    }    
+
+    /* End Contact CSS*/
+
+    footer {
+        width: 15vw;
+        padding: 0.1em;
+        margin: auto;
+        color: white;
+        background-color: #222;
+        border-radius: 1em;
+        height: 30px;
+        margin-top: 50px;
+    }
+
+}
+
+
+
+
