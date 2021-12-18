@@ -12,3 +12,4 @@ Die Liste zeigt die gewählten Produkte und die zugehörigen Preise an.
 Am Ende der Liste wird der Gesamtpreis aller Produkte angegeben.
 
 Ein Produkt kann ausgewählt werden, indem der zugehörige Button angeklickt wird.
+# Online-Shop-JavaScript-Basket

@@ -1,5 +1,5 @@
-let euro = true;
 
+let euro = true;
 
 function myFunction(){
     //document = greift aus html seite zu
@@ -8,7 +8,7 @@ function myFunction(){
     console.log("es funkioniert");
     console.log(euro);
     euro = !euro;
-     ;
+     
     if (euro) { document.getElementById("wert").innerHTML = ("$")}
     
     else { document.getElementById("wert").innerHTML = ("€");
@@ -110,14 +110,14 @@ else { document.getElementById("preis9").innerHTML = (document.getElementById("p
 
 function kaufen() {
     document.getElementById("list").innerHTML =
-        document.getElementById("list").innerHTML + "<li>" + "Notebook - 720 €" + "</li>";
+        document.getElementById("list").innerHTML + "<li>" + "Laptops - 720 €" + "</li>";
     // Gesamtsumme
     document.getElementById("gesamtbetrag").innerHTML =
         // gesamtbetrag + neues Produkt
         Number(document.getElementById("gesamtbetrag").innerHTML)+ Number(document.getElementById("preis").innerHTML);}
  function kaufen1() {
         document.getElementById("list").innerHTML =
-        document.getElementById("list").innerHTML + "<li>" + "Notebook - 32 €" + "</li>";
+        document.getElementById("list").innerHTML + "<li>" + "Kopfhörer - 32 €" + "</li>";
     // Gesamtsumme
     document.getElementById("gesamtbetrag").innerHTML =
         // gesamtbetrag + neues Produkt
@@ -126,7 +126,7 @@ function kaufen() {
 
   function kaufen2() {
             document.getElementById("list").innerHTML =
-            document.getElementById("list").innerHTML + "<li>" + "Notebook - 1120 €" + "</li>";
+            document.getElementById("list").innerHTML + "<li>" + "Laptops - 1120 €" + "</li>";
         // Gesamtsumme
     document.getElementById("gesamtbetrag").innerHTML =
     // gesamtbetrag + neues Produkt
@@ -134,7 +134,7 @@ function kaufen() {
 
      function kaufen3() {
       document.getElementById("list").innerHTML =
-      document.getElementById("list").innerHTML + "<li>" + "Notebook - 560 €" + "</li>";
+      document.getElementById("list").innerHTML + "<li>" + "iPd - 560 €" + "</li>";
       document.getElementById("gesamtbetrag").innerHTML =
                 // gesamtbetrag + neues Produkt
       Number(document.getElementById("gesamtbetrag").innerHTML)+ Number(document.getElementById("preis3").innerHTML);}
@@ -142,7 +142,7 @@ function kaufen() {
                 
      function kaufen4() {
       document.getElementById("list").innerHTML =
-      document.getElementById("list").innerHTML + "<li>" + "Notebook - 216 €" + "</li>";
+      document.getElementById("list").innerHTML + "<li>" + "Kopfhörer - 216 €" + "</li>";
       document.getElementById("gesamtbetrag").innerHTML =
                     // gesamtbetrag + neues Produkt
       Number(document.getElementById("gesamtbetrag").innerHTML)+ Number(document.getElementById("preis4").innerHTML);}
@@ -150,7 +150,7 @@ function kaufen() {
                     
      function kaufen5() {
       document.getElementById("list").innerHTML =
-      document.getElementById("list").innerHTML + "<li>" + "Notebook - 690 €" + "</li>";
+      document.getElementById("list").innerHTML + "<li>" + "Laptops - 690 €" + "</li>";
       document.getElementById("gesamtbetrag").innerHTML =
                         // gesamtbetrag + neues Produkt
       Number(document.getElementById("gesamtbetrag").innerHTML)+ Number(document.getElementById("preis5").innerHTML);}
@@ -158,7 +158,7 @@ function kaufen() {
                         
      function kaufen6() {
       document.getElementById("list").innerHTML =
-      document.getElementById("list").innerHTML + "<li>" + "Notebook - 415.4 €" + "</li>";
+      document.getElementById("list").innerHTML + "<li>" + "Handy - 415.4 €" + "</li>";
       document.getElementById("gesamtbetrag").innerHTML =
                             // gesamtbetrag + neues Produkt
       Number(document.getElementById("gesamtbetrag").innerHTML)+ Number(document.getElementById("preis6").innerHTML);}
@@ -166,7 +166,7 @@ function kaufen() {
                             
       function kaufen7() {
        document.getElementById("list").innerHTML =
-       document.getElementById("list").innerHTML + "<li>" + "Notebook - 960 €" + "</li>";
+       document.getElementById("list").innerHTML + "<li>" + "Laptops - 960 €" + "</li>";
        document.getElementById("gesamtbetrag").innerHTML =
                                 // gesamtbetrag + neues Produkt
        Number(document.getElementById("gesamtbetrag").innerHTML)+ Number(document.getElementById("preis7").innerHTML);}
@@ -174,14 +174,14 @@ function kaufen() {
                                 
      function kaufen8() {
        document.getElementById("list").innerHTML =
-       document.getElementById("list").innerHTML + "<li>" + "Notebook - 560 €" + "</li>";
+       document.getElementById("list").innerHTML + "<li>" + "Handy - 560 €" + "</li>";
        document.getElementById("gesamtbetrag").innerHTML =
                                     // gesamtbetrag + neues Produkt
       Number(document.getElementById("gesamtbetrag").innerHTML)+ Number(document.getElementById("preis8").innerHTML);}
 
      function kaufen9() {
        document.getElementById("list").innerHTML =
-       document.getElementById("list").innerHTML + "<li>" + "Notebook - 96 €" + "</li>";
+       document.getElementById("list").innerHTML + "<li>" + "Digital Kamera - 96 €" + "</li>";
        document.getElementById("gesamtbetrag").innerHTML =
                                         // gesamtbetrag + neues Produkt
     Number(document.getElementById("gesamtbetrag").innerHTML)+ Number(document.getElementById("preis9").innerHTML);}
